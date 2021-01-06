@@ -1,0 +1,7 @@
+{
+  "name": "yorhood-resto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
