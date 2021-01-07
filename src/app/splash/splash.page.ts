@@ -9,6 +9,8 @@ import { timer } from 'rxjs';
 })
 export class SplashPage implements OnInit {
 
+  splash: boolean = false;
+
   constructor(private router: Router) { 
   }
 
