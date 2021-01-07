@@ -108,10 +108,14 @@ ion-content {
 
     .img_container {
       width: 100%;
+      position: relative;
+      height: 200px;
       img {
+        position: absolute;
         width: 100px;
         height: 90px;
-        margin-left: 25%;
+        right: 25%;
+        bottom: 0;
       }
     }
   }
