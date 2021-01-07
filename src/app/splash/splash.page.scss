@@ -2,6 +2,11 @@ ion-content {
   --background: #c04326;
 }
 
+
+ion-icon {
+  color: #c04326;
+}
+
 @keyframes spinners__conntainer {
   0% {
     transform: translate(12px, 80px) scale(0);
@@ -127,6 +132,11 @@ ion-content {
   align-items: center;
 
   button {
-    
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
   }
 }
