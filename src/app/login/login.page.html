@@ -19,7 +19,7 @@
                     <img src="../../assets/img/vector.png" alt="">
                 </div>
             </div>
-            <div class="field">
+             <div class="field">
                 <small class="dcolor" *ngIf="(email.statusChanges|async) === 'INVALID'">{{'Email is invalid'}}</small>
                 <small class="vcolor" *ngIf="(email.statusChanges|async) === 'VALID'">{{'Valid Enter'}}</small>
                 <input type="text" id="email" formControlName="email"  placeholder="Ek@example.com">
