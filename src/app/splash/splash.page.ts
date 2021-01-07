@@ -15,7 +15,9 @@ export class SplashPage implements OnInit {
   }
 
   ngOnInit() {
-     
+     setTimeout(() => {
+       this.splash = true;
+     }, 2000);
   }
 
 }
