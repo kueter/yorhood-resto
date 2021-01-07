@@ -6,7 +6,7 @@ ion-content {
     position: absolute;
     top: -10%;
     left: -5%;
-    z-index: 2;
+    z-index: -2;
     background-color: rgba($color: #c04326, $alpha: .4);
     width: 200px;
     height: 200px;
@@ -14,9 +14,35 @@ ion-content {
 }
 
 .back-middle {
-    z-index: 2;
+    z-index: -2;
     position: absolute;
     top: 10%;
     right: -34%;
     opacity: .4;
 }
+
+
+form {
+    margin-top: 100px;
+    position: relative;
+    .wrap-input {
+        background-color: white;
+        border-radius: .20rem;
+        margin-bottom: 26px;
+        box-shadow: 0 10px 30px 0px  rgba(57,71,82,0.12);
+    }
+
+    input {
+        display: block;
+        width: 100%;
+        background-color: transparent;
+        font-family: 'Montserrat';
+        font-size: 16px;
+        line-height: 1.2;
+        border: none;
+        outline: none;
+        height: 50px;
+        padding: 0 20px 0 23px;
+    }
+}
+
