@@ -1,0 +1,22 @@
+ion-content {
+    --background: #fff;
+}
+
+.back-font {
+    position: absolute;
+    top: -10%;
+    left: -5%;
+    z-index: 2;
+    background-color: rgba($color: #c04326, $alpha: .4);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.back-middle {
+    z-index: 2;
+    position: absolute;
+    top: 10%;
+    right: -34%;
+    opacity: .4;
+}
