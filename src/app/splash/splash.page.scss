@@ -49,16 +49,6 @@ ion-icon {
   }
 }
 
-@keyframes button-anima {
-  0% {
-    width: 60px; height: 60px;
-  }
-
-  100% {
-    width: 70px; height: 50px;
-  }
-}
-
 .spinners {
   display: flex;
   justify-content: center;
@@ -160,6 +150,7 @@ ion-icon {
     border-radius: 50%;
     width: 70px;
     height: 70px;
-    transition: button-anima 1s infinite alternate;
+    box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .3);
+    transition: all .4s ease-in-out;
   }
 }
