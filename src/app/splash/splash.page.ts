@@ -20,4 +20,8 @@ export class SplashPage implements OnInit {
      }, 2000);
   }
 
+  getStarted() {
+    this.router.navigateByUrl('login');
+  }
+
 }
