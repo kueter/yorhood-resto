@@ -65,10 +65,10 @@ form {
         position: relative;
     }
      
-      label, input, textarea {
+    label, input, textarea {
         transition: all 0.2s;
         touch-action: manipulation;
-      }
+    }
       
       input,textarea {
         font-size: 1em;
@@ -90,7 +90,7 @@ form {
         text-transform: capitalize;
         letter-spacing: 0.05em;
         font-size: 10px;
-        color: #4d4f52;
+        color: #656769;
         font-weight: bold;
       }
   
@@ -125,5 +125,18 @@ form {
         transform: translate(0, 0) scale(1);
         cursor: pointer;
       }
+
+    .actions {
+      width: 100%;
+      button {
+        width: 50%;
+        height: 50px;
+        border-radius: .35rem;
+        border: none;
+        background-color: white;
+        box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
+        color: #c04326;
+      }
+    }
 }
 
