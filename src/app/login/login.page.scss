@@ -16,7 +16,7 @@ ion-content {
 .back-middle {
     z-index: -2;
     position: absolute;
-    top: 10%;
+    top: 8%;
     right: -74%;
     // opacity: .4;
 }
@@ -61,7 +61,7 @@ form {
     .field {
         display: flex;
         flex-flow: column-reverse;
-        margin-bottom: .6em;
+        margin-bottom: 1rem;
         position: relative;
     }
      
@@ -90,7 +90,7 @@ form {
         text-transform: capitalize;
         letter-spacing: 0.05em;
         font-size: 10px;
-        color: #656769;
+        color: #77797a;
         font-weight: bold;
       }
   
@@ -107,6 +107,7 @@ form {
       ::-webkit-input-placeholder {
         opacity: 0;
         transition: inherit;
+        color: #77797a;
       }
       
       textarea::-webkit-input-placeholder {
@@ -128,6 +129,10 @@ form {
 
     .actions {
       width: 100%;
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       button {
         width: 50%;
         height: 50px;
@@ -136,7 +141,22 @@ form {
         background-color: white;
         box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
         color: #c04326;
+        outline: none;
       }
     }
 }
 
+
+.sw-to-register {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 10%;
+  span {
+    font-size: 15px;
+    color: #77797a;
+
+    a {
+      color: #c04326;
+    }
+  }
+}
