@@ -8,7 +8,7 @@
     </svg>
 
     <div class="ion-padding">
-        <form class="ion-padding">
+        <form class="ion-padding" [formGroup]="LoginForm">
 
             <div class="header">
                 <div class="title">
@@ -19,12 +19,18 @@
                     <img src="../../assets/img/vector.png" alt="">
                 </div>
             </div>
-            <div class="wrap-input">
-                <input type="text" class="input">
-            </div>
-            <div class="wrap-input">
-                <input type="text" class="input">
-           </div>
+            <div class="field">
+                <small class="dcolor" *ngIf="(email.statusChanges|async) === 'INVALID'">{{'Email is invalid'}}</small>
+                <small class="vcolor" *ngIf="(email.statusChanges|async) === 'VALID'">{{'Valid Enter'}}</small>
+                <input type="text" id="email" formControlName="email"  placeholder="Ek@example.com">
+                <label for="email"><i class="fal fa-envelope mr-2"></i>{{'Email'}}</label>
+              </div>
+              <div class="field">
+                <small class="dcolor" *ngIf="(password.statusChanges|async) === 'INVALID'">{{'Password is invalid'}}</small>
+                <small class="vcolor"  *ngIf="(password.statusChanges|async) === 'VALID'">{{'Valid Enter'}}</small>
+                <input type="password" id="password" formControlName="password"  placeholder="********">
+                <label for="password"><i class="fal fa-lock mr-2"></i>{{'Password'}}</label>
+              </div>
            <div class="action">
                 <button><small>{{'Log In'}}</small></button>
            </div>
