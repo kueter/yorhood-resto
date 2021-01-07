@@ -19,15 +19,15 @@
                 </div>
             </div>
              <div class="field">
-                <small class="dcolor float-right" *ngIf="(email.statusChanges|async) === 'INVALID'">{{'Email is invalid'}}</small>
-                <ion-icon name="checkmark-circle" *ngIf="(email.statusChanges|async) === 'VALID'"></ion-icon>
+                <small class="dcolor" *ngIf="(email.statusChanges|async) === 'INVALID'">{{'Email is invalid'}}</small>
+                <ion-icon class="check" style="margin-top: 12px;" name="checkmark-circle" *ngIf="(email.statusChanges|async) === 'VALID'"></ion-icon>
                 <input type="text" id="email" formControlName="email"  placeholder="Ek@example.com">
                 <label for="email"><i class="fal fa-envelope mr-2"></i>{{'Email'}}</label>
               </div>
               <div class="field">
                 <small class="dcolor" *ngIf="(password.statusChanges|async) === 'INVALID'">{{'Password is invalid'}}</small>
-                <small class="vcolor"  *ngIf="(password.statusChanges|async) === 'VALID'">{{'Valid Enter'}}</small>
-                <input type="password" id="password" formControlName="password"  placeholder="********">
+                <ion-icon class="check" style="margin-top: 12px;" name="checkmark-circle" *ngIf="(password.statusChanges|async) === 'VALID'"></ion-icon>
+                 <input type="password" id="password" formControlName="password"  placeholder="********">
                 <label for="password"><i class="fal fa-lock mr-2"></i>{{'Password'}}</label>
               </div>
                 <div class="actions">
