@@ -32,7 +32,7 @@ ion-content {
     background: #fff;
   }
   25% {
-    background:#fff;
+    background: #fff;
   }
   50% {
     background: #fff;
@@ -45,7 +45,6 @@ ion-content {
   }
 }
 
-
 .spinners {
   display: flex;
   justify-content: center;
@@ -55,56 +54,65 @@ ion-content {
   background-color: transparent;
   z-index: 20;
 
-  .spinners__conntainer div {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transform: translate(80px, 80px) scale(1);
-    background: #fff;
-    animation: spinners__conntainer 1s infinite cubic-bezier(0, 0.5, 0.5, 1);
-  }
-  
-  .spinners__conntainer {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    transform: translateZ(0) scale(1);
-    backface-visibility: hidden;
-    transform-origin: 0 0; /* see note above */
-  
-    div {
-      box-sizing: content-box;
-    }
-  
-    div:nth-child(1) {
+  ._container {
+    .spinners__conntainer div {
+      position: absolute;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transform: translate(80px, 80px) scale(1);
       background: #fff;
-      transform: translate(148px, 80px) scale(1);
-      animation: spinners__conntainer-r 0.25s infinite
-          cubic-bezier(0, 0.5, 0.5, 1),
-        spinners__conntainer-c 1s infinite step-start;
+      animation: spinners__conntainer 1s infinite cubic-bezier(0, 0.5, 0.5, 1);
     }
-  
-    div:nth-child(2) {
-      animation-delay: -0.25s;
-      background: #fff;
-    }
-  
-    div:nth-child(3) {
-      animation-delay: -0.5s;
-      background: #fff;
-    }
-  
-    div:nth-child(4) {
-      animation-delay: -0.75s;
-      background: #fff;
-    }
-  
-    div:nth-child(5) {
-      animation-delay: -1s;
-      background:#fff;
-    }
-  }
 
-  
+    .spinners__conntainer {
+      width: 200px;
+      height: 200px;
+      position: relative;
+      transform: translateZ(0) scale(1);
+      backface-visibility: hidden;
+      transform-origin: 0 0; /* see note above */
+
+      div {
+        box-sizing: content-box;
+      }
+
+      div:nth-child(1) {
+        background: #fff;
+        transform: translate(148px, 80px) scale(1);
+        animation: spinners__conntainer-r 0.25s infinite
+            cubic-bezier(0, 0.5, 0.5, 1),
+          spinners__conntainer-c 1s infinite step-start;
+      }
+
+      div:nth-child(2) {
+        animation-delay: -0.25s;
+        background: #fff;
+      }
+
+      div:nth-child(3) {
+        animation-delay: -0.5s;
+        background: #fff;
+      }
+
+      div:nth-child(4) {
+        animation-delay: -0.75s;
+        background: #fff;
+      }
+
+      div:nth-child(5) {
+        animation-delay: -1s;
+        background: #fff;
+      }
+    }
+
+    .img_container {
+      width: 100%;
+      img {
+        width: 100px;
+        height: 90px;
+        margin-left: 25%;
+      }
+    }
+  }
 }
