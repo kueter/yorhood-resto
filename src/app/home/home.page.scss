@@ -307,6 +307,7 @@ ion-card-header {
 
 .cata_recent-review {
   margin-top: 15px;
+  margin-bottom: 15px;
   .theader {
     width: 60%;
     margin-bottom: 10px;
@@ -341,9 +342,11 @@ ion-card-header {
 
   .tbody {
     .item-l {
+      margin-bottom: 10px;
       &__f {
         display: flex;
-        width: 100%;
+        width: 80%;
+        margin-right: auto;
         align-items: center;
         justify-content: space-between;
 
@@ -356,9 +359,31 @@ ion-card-header {
         }
 
         .idn_di {
+          display: grid;
           width: 70%;
           overflow: hidden;
           white-space: nowrap;
+
+          span:first-child {
+            font-size: 17px;
+            font-weight: bold;
+            color: #77797a;
+          }
+
+          span:last-child {
+            font-size: 11px;
+            color: #b3b5b6;
+          }
+        }
+      }
+
+      &__s {
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        span {
+          font-size: 15px;
+          color: #77797a;
         }
       }
     }

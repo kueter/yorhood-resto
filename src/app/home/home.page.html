@@ -152,9 +152,7 @@
       <div class="tbody">
           <ion-grid fixed class="ion-no-padding">
             <ion-row>
-              <ion-col size="12">
-                <ion-card>
-                  <ion-card-content>
+              <ion-col size="12" *ngFor="let ite of [].constructor(2)">
                       <div class="item-l">
                           <div class="item-l__f">
                                 <div class="idn_ci">
@@ -162,15 +160,13 @@
                                 </div>
                                 <div class="idn_di">
                                   <span>{{'Christian'}}</span>
-                                  <span>{{'Lorem ipsum dolor sit amet consectetur.'}}</span>  
+                                  <span>{{'Lorem ipsum dolor sit amet.'}}</span>  
                                 </div>
                           </div>
                           <div class="item-l__s">
-
+                              <span>{{'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim neque eius modi ea sit amet consectetur adipisicing elit.'}}</span>
                           </div>
                       </div>
-                  </ion-card-content>
-                </ion-card>
               </ion-col>
             </ion-row>
           </ion-grid>
