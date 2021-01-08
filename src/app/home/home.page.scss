@@ -77,7 +77,29 @@ ion-icon.trophy {
   }
   .tbody {
     width: 100%;
+
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     
+    .libelle {
+      overflow: hidden;
+      display: grid;
+      span:first-child {
+        font-size: 17px;
+        font-weight: normal;
+        color: #77797a;
+      }
+      span:last-child {
+        font-size: 17px;
+        font-weight: normal;
+        color: #afb1b3;
+      }
+
+    }
+  }
   }
 
 }
