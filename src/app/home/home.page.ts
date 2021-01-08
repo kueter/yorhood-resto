@@ -38,12 +38,12 @@ export class HomePage {
   ];
 
   foods = [
-    {img: '../../assets/img/f1.jpg'},
-    {img: '../../assets/img/f2.jpg'},
-    {img: '../../assets/img/f3.jpg'},
-    {img: '../../assets/img/f4.jpg'},
-    {img: '../../assets/img/f5.jpg'},
-    {img: '../../assets/img/f6.jpg'},
+    {img: '../../assets/img/f1.jpg', price: 12.5},
+    {img: '../../assets/img/f2.jpg', price: 25},
+    {img: '../../assets/img/f3.jpg', price: 26},
+    {img: '../../assets/img/f4.jpg', price: 23},
+    {img: '../../assets/img/f5.jpg', price: 70},
+    {img: '../../assets/img/f6.jpg', price: 100},
   ];
 
   

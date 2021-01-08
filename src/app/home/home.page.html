@@ -36,6 +36,7 @@
                       <ion-card>
                         <ion-card-header class="ion-no-padding">
                             <img [src]="item?.img" alt="">
+                            <span></span>
                         </ion-card-header>
                         <ion-card-content>
                             <div class="content">
@@ -43,7 +44,7 @@
                                   <div>{{'Home Cooking Experience'}}</div>
                                   <div>{{'Lorem ipsum dolor sit amet consectetur adipisicing elit.'}}</div>
                                 </div>
-                                <button><ion-icon class="map" name="map"></ion-icon></button>
+                                <button><ion-icon class="map" name="return-up-forward-outline"></ion-icon></button>
                             </div>
                             <div class="fc_">
                               <ion-icon class="star" name="star" *ngFor="let i of [].constructor(5)"></ion-icon>
@@ -68,7 +69,7 @@
           <ion-slides [options]="slidesOpts">
             <ion-slide *ngFor="let item of foods">
               <ion-card>
-                <ion-card-header>
+                <ion-card-header class="ion-no-padding">
                     <img [src]="item?.img" alt="">
                 </ion-card-header>
                 <ion-card-content>
