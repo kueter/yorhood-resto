@@ -57,13 +57,19 @@ export class HomePage {
     { img: '../../assets/img/f6.jpg', price: 100, name: 'Melange'},
   ];
 
-
   categories = [
     { img: '../../assets/img/waste.png', name: 'Grains'},
     { img: '../../assets/img/fast-food.png', name: 'Sandwiches'},
     { img: '../../assets/img/hamburger.png', name: 'Hangburger' },
     { img: '../../assets/img/pizza.png', name: 'Pizza' },
     { img: '../../assets/img/fast-food_1.png', name: 'Foody' },
+  ];
+
+  populars = [
+    { img: '../../assets/img/f5.jpg', price: 70, name: 'Poulet'},
+    { img: '../../assets/img/f6.jpg', price: 100, name: 'Melange'},
+    { img: '../../assets/img/f7.jpg', price: 100, name: 'Yassa'},
+    { img: '../../assets/img/f4.jpg', price: 100, name: 'Peperon'},
   ];
 
   
