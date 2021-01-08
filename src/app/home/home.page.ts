@@ -23,7 +23,7 @@ export class HomePage {
      direction: 'horizontal',
      speed: 300,
      // effect: slide,
-     spaceBetween: 8,
+     spaceBetween: 1,
      slidesPerView: 3.2,
      freeMode: true,
      loop: true
@@ -38,12 +38,12 @@ export class HomePage {
   ];
 
   foods = [
-    {img: '../../assets/img/f1.jpg', price: 12.5},
-    {img: '../../assets/img/f2.jpg', price: 25},
-    {img: '../../assets/img/f3.jpg', price: 26},
-    {img: '../../assets/img/f4.jpg', price: 23},
-    {img: '../../assets/img/f5.jpg', price: 70},
-    {img: '../../assets/img/f6.jpg', price: 100},
+    { img: '../../assets/img/f1.jpg', price: 12.5, name: 'Donuts'},
+    { img: '../../assets/img/f2.jpg', price: 25, name: 'Frites'},
+    { img: '../../assets/img/f3.jpg', price: 26, name: 'Vegane'},
+    { img: '../../assets/img/f4.jpg', price: 23, name: 'Brochette'},
+    { img: '../../assets/img/f5.jpg', price: 70, name: 'Poulet'},
+    { img: '../../assets/img/f6.jpg', price: 100, name: 'Melange'},
   ];
 
   
