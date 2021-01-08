@@ -4,9 +4,13 @@ ion-header {
     --background: #fafafa;
   }
 }
+.content-bg {
+  background-color: #fafafa;
+}
+
 
 ion-content {
-  --background: #fafafa;
+  // --background: #fafafa;
   --offset-bottom: auto!important;
   --overflow: hidden;
   overflow: auto;

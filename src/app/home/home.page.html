@@ -1,4 +1,4 @@
-<ion-header class="ion-no-border">
+<ion-header class="ion-no-border content-bg ion-padding-bottom">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button>
@@ -19,7 +19,7 @@
   (ionChange)="onSearchChange($event)" [debounce]="250"></ion-searchbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content [fullscreen]="true" class="ion-padding content-bg">
 
     <div class="cata_top-resto">
         <div class="theader">
@@ -135,7 +135,30 @@
     </div>
 
     <div class="cata_recent-review">
-      
+      <div class="theader">
+        <div class="ach-ci"><ion-icon class="trend-up" name="people-circle-outline"></ion-icon></div>
+        <div class="arch-title">
+          <span class="fc">{{'Recent Reviews'}}</span>
+          <!-- <span class="lc">{{'Double click on the food to add it on the cart'}}</span> -->
+        </div>
+      </div>
+      <div class="tbody">
+          <ion-grid fixed class="ion-no-padding">
+            <ion-row>
+              <ion-col size="12">
+                <ion-card>
+                  <ion-card-header>
+                    <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+                    <ion-card-title>Awesome Title</ion-card-title>
+                  </ion-card-header>
+                  <ion-card-content>
+                    Awesome content
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+      </div>
     </div>
 
 </ion-content>
