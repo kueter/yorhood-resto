@@ -223,6 +223,18 @@ ion-card-header {
 
   .tbody {
 
+    ion-card-content {
+      background-color: #c04326;
+      
+      .hd {
+        width: 100%;
+        height: 40px;
+      }
+
+      .bd {
+        
+      }
+    }
   }
 
 }

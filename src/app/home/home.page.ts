@@ -46,6 +46,14 @@ export class HomePage {
     { img: '../../assets/img/f6.jpg', price: 100, name: 'Melange'},
   ];
 
+
+  categories = [
+    { img: '', name: 'Grains'},
+    { img: '', name: 'Sandwiches'},
+    { img: '', name: 'Vegetables' },
+    { img: '', name: 'Carnivores' },
+  ];
+
   
   constructor() {}
 
