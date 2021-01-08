@@ -24,11 +24,22 @@ export class HomePage {
      speed: 300,
      // effect: slide,
      spaceBetween: 1,
-     slidesPerView: 3.2,
+     slidesPerView: 3.3,
      freeMode: true,
      loop: true
   };
   
+  slidesOpt = {
+    // initialSlide: 0,
+    direction: 'horizontal',
+    speed: 300,
+    // effect: slide,
+    spaceBetween: 1,
+    slidesPerView: 3.5,
+    freeMode: true,
+    loop: true
+ };
+
   slides = [
     { img: '../../assets/img/1.jpg'},
     { img: '../../assets/img/2.jpg'},
@@ -48,10 +59,11 @@ export class HomePage {
 
 
   categories = [
-    { img: '', name: 'Grains'},
-    { img: '', name: 'Sandwiches'},
-    { img: '', name: 'Vegetables' },
-    { img: '', name: 'Carnivores' },
+    { img: '../../assets/img/waste.png', name: 'Grains'},
+    { img: '../../assets/img/fast-food.png', name: 'Sandwiches'},
+    { img: '../../assets/img/hamburger.png', name: 'Hangburger' },
+    { img: '../../assets/img/pizza.png', name: 'Pizza' },
+    { img: '../../assets/img/fast-food_1.png', name: 'Foody' },
   ];
 
   

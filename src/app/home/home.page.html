@@ -91,15 +91,15 @@
       </div>
 
       <div class="tbody">
-            <ion-slides [options]="slidesOpts">
+            <ion-slides [options]="slidesOpt">
               <ion-slide *ngFor="let item of categories">
                     <ion-card>
-                      <ion-card-content class="ion-no-padding">
+                      <ion-card-content>
                         <div class="hd">
                           <img [src]="item?.img" alt="">
                         </div>
                         <div class="bd">
-                          <small>{{item?.name}}</small>  
+                          <!-- <small>{{item?.name}}</small>   -->
                         </div>
                       </ion-card-content>
                     </ion-card>
