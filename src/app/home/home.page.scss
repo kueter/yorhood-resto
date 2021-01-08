@@ -292,7 +292,12 @@ ion-card-header {
   } 
 
   .tbody {
-
+    ion-card-header {
+      .img {
+        width: 100%;
+        height: 75px;
+      }
+    }
   }
 }
 
