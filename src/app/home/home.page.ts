@@ -66,10 +66,10 @@ export class HomePage {
   ];
 
   populars = [
-    { img: '../../assets/img/f5.jpg', price: 70, name: 'Poulet'},
-    { img: '../../assets/img/f6.jpg', price: 100, name: 'Melange'},
-    { img: '../../assets/img/f7.jpg', price: 100, name: 'Yassa'},
-    { img: '../../assets/img/f4.jpg', price: 100, name: 'Peperon'},
+    { img: '../../assets/img/5.jpg', name: 'Home cooking exp'},
+    { img: '../../assets/img/6.jpg', name: 'Yorhood resto'},
+    { img: '../../assets/img/3.jpg', name: 'La perla'},
+    { img: '../../assets/img/4.jpg', name: 'Peperon'},
   ];
 
   

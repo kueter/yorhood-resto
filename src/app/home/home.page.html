@@ -1,4 +1,4 @@
-<ion-header class="ion-no-border content-bg">
+<ion-header class="ion-no-border content-bg ion-padding-bottom">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button>
@@ -124,10 +124,15 @@
                       <img [src]="item?.img" alt="" srcset="">
                     </ion-card-header>
                     <ion-card-content>
-                      <div></div>
-                      <div>
-                        <ion-icon name="star-outline"></ion-icon>
+                      <div class="title">
+                          <span></span>
                       </div>
+                      <div class="advice">
+                        <ion-icon name="star-outline"></ion-icon>
+                        <ion-icon name="star"></ion-icon>
+                      </div>
+
+
                     </ion-card-content>
                   </ion-card>
               </ion-col>
