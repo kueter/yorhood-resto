@@ -298,6 +298,13 @@ ion-card-header {
         height: 75px;
       }
     }
+
+    .title {
+      width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      
+    }
   }
 }
 
