@@ -18,7 +18,7 @@ ion-title.h {
   font-weight: bold;
 }
 
-ion-icon.trophy , .star{
+ion-icon.trophy , .star, .trend-up{
   color: #c04326;
 }
 
@@ -131,7 +131,7 @@ ion-icon.trophy , .star{
 .cata_trend_week {
   .theader {
     width: 70%;
-    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
