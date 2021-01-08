@@ -19,7 +19,7 @@ ion-title.h {
 }
 
 ion-icon.trophy {
-  color: #FFF;
+  color: #c04326;
 }
 
 .nav_searchbar{
@@ -59,7 +59,7 @@ ion-icon.trophy {
       border-radius: .40rem;
       box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
       overflow: hidden;
-      background-color: #77797a;
+      background-color: #FFFF;
     }
     .arch-title {
       display: grid;
@@ -85,20 +85,41 @@ ion-icon.trophy {
     justify-content: space-between;
     
     .libelle {
+      width: 75%;
+      display: block;
       overflow: hidden;
-      display: grid;
-      span:first-child {
+      white-space: nowrap;
+      div:first-child {
+        width: 100%;
         font-size: 17px;
-        font-weight: normal;
+        font-weight: bold;
         color: #77797a;
       }
-      span:last-child {
-        font-size: 17px;
+      div:last-child {
+        font-size: 16px;
         font-weight: normal;
         color: #afb1b3;
       }
 
     }
+
+    button {
+      background-color: #c04326;
+      color: #FFF;
+      border-radius: .40rem;
+      border: none;
+      width: 40px;
+      height: 35px;
+    }
+  }
+
+  .fc_ {
+    margin-top: 5px;
+    width: 30%;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   }
 
