@@ -31,11 +31,11 @@
         </div>
         <div class="tbody ion-margin-bottom">
             <div class="slides">
-                <ion-slides [options]="slideOptions">
-                  <ion-slide>
+                <ion-slides [options]="slidesOptions">
+                  <ion-slide *ngFor="let item of slides">
                       <ion-card>
                         <ion-card-header class="ion-no-padding">
-                            <img src="../../assets/img/1.jpg" alt="">
+                            <img [src]="item?.img" alt="">
                         </ion-card-header>
                         <ion-card-content>
                             <div class="content">
@@ -46,7 +46,7 @@
                                 <button><ion-icon class="map" name="map"></ion-icon></button>
                             </div>
                             <div class="fc_">
-                              <ion-icon name="star" *ngFor="let i of [].constructor(5)"></ion-icon>
+                              <ion-icon class="star" name="star" *ngFor="let i of [].constructor(5)"></ion-icon>
                             </div>
                         </ion-card-content>
                       </ion-card>
