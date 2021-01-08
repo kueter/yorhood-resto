@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  slideOptions = {};
+
   constructor() {}
 
   onSearchChange(event) {
