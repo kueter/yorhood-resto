@@ -9,4 +9,8 @@ export class HomePage {
 
   constructor() {}
 
+  onSearchChange(event) {
+    console.log(event.target.value);
+  }
+
 }

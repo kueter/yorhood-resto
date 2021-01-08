@@ -1,23 +1,23 @@
 <ion-header class="ion-no-border">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-button>
+        <ion-icon class="drawer-btn" name="menu"></ion-icon>
+      </ion-button>
     </ion-buttons>
-    <ion-title class="ion-text-center">
+    <ion-title size="small" class="ion-text-center h">
       {{'Home'}}
     </ion-title>
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon class="cart-btn" name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
+  <ion-searchbar placeholder="Filter Pizza" class="nav_searchbar hiddenBtnContainer" inputmode="decimal" type="decimal" 
+  spellcheck="true" animated="true" autocomplete="true" autocorrect="true"
+  (ionChange)="onSearchChange($event)" [debounce]="250" showCancelButton="focus"></ion-searchbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
 </ion-content>

@@ -1,27 +1,28 @@
-#container {
-  text-align: center;
-
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+ion-icon.drawer-btn,.cart-btn {
+  color: #77797a;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+ion-title.h {
+  color: #c04326;
+  font-weight: bold;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.nav_searchbar{
+  border: 1px solid #77797a !important;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: .35rem;
+  padding: 2px;
+  box-shadow: none;
+  --box-shadow: none;
+  -webkit-box-shadow: none;
 }
 
-#container a {
-  text-decoration: none;
+.searchbar-input.sc-ion-searchbar-md{
+
+  box-shadow: none;
+  --box-shadow: none;
+  -webkit-box-shadow: none;
+
 }
