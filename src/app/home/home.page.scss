@@ -288,6 +288,41 @@ ion-card-header {
   } 
 
   .tbody {
-    
+
   }
+}
+
+.cata_recent-review {
+  margin-top: 15px;
+  .theader {
+    width: 60%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ach-ci {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 35px;
+      height: 35px;
+      border-radius: 0.4rem;
+      box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
+      overflow: hidden;
+      background-color: #ffff;
+    }
+    .arch-title {
+      display: grid;
+      span.fc {
+        font-weight: bold;
+        font-size: 18px;
+        color: #77797a;
+      }
+      span.lc {
+        font-weight: lighter;
+        font-size: 12px;
+        color: #77797a;
+      }
+    }
+  } 
 }
