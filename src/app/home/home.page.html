@@ -14,10 +14,18 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-  <ion-searchbar placeholder="Filter Pizza" class="nav_searchbar hiddenBtnContainer" inputmode="decimal" type="decimal" 
+  <ion-searchbar placeholder="Filter Pizza" class="nav_searchbar" inputmode="decimal" type="decimal" 
   spellcheck="true" animated="true" autocomplete="true" autocorrect="true"
-  (ionChange)="onSearchChange($event)" [debounce]="250" showCancelButton="focus"></ion-searchbar>
+  (ionChange)="onSearchChange($event)" [debounce]="250"></ion-searchbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+
+    <div class="cata_top-resto">
+        <div class="theader">
+            <div class="ach-ci"><ion-icon name="trophy"></ion-icon></div>
+        </div>
+    </div>
+
+
 </ion-content>
