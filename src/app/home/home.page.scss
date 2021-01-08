@@ -235,9 +235,11 @@ ion-card-header {
         }
       }
 
-      .bd {
-        width: 70%;
-        overflow: hidden;
+      small {
+        position: absolute;
+        color: #fff;
+        bottom: 0%;
+        left: 25%;
       }
     }
   }
