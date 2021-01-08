@@ -11,14 +11,13 @@ ion-header {
 
 ion-content {
   // --background: #fafafa;
-  --offset-bottom: auto!important;
+  --offset-bottom: auto !important;
   --overflow: hidden;
   overflow: auto;
   &::-webkit-scrollbar {
     display: none;
   }
 }
-
 
 ion-icon.drawer-btn,
 .cart-btn {
@@ -256,7 +255,6 @@ ion-card-header {
   }
 }
 
-
 .cata_most_popular {
   margin-top: 15px;
   .theader {
@@ -289,7 +287,7 @@ ion-card-header {
         color: #77797a;
       }
     }
-  } 
+  }
 
   .tbody {
     ion-card-header {
@@ -303,7 +301,6 @@ ion-card-header {
       width: 100%;
       overflow: hidden;
       white-space: nowrap;
-      
     }
   }
 }
@@ -340,5 +337,30 @@ ion-card-header {
         color: #77797a;
       }
     }
-  } 
+  }
+
+  .tbody {
+    .item-l {
+      &__f {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+
+        .idn_ci {
+          img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+          }
+        }
+
+        .idn_di {
+          width: 70%;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
 }
