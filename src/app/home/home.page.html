@@ -19,11 +19,15 @@
   (ionChange)="onSearchChange($event)" [debounce]="250"></ion-searchbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="ion-padding">
 
     <div class="cata_top-resto">
         <div class="theader">
-            <div class="ach-ci"><ion-icon name="trophy"></ion-icon></div>
+            <div class="ach-ci"><ion-icon class="trophy" name="trophy"></ion-icon></div>
+            <div class="arch-title">
+                <span class="fc">{{'Top Restaurants'}}</span>
+                <span class="lc">{{'Ordered by nearby first'}}</span>
+            </div>
         </div>
     </div>
 
