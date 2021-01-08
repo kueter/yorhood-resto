@@ -35,7 +35,7 @@ export class HomePage {
     speed: 300,
     // effect: slide,
     spaceBetween: 1,
-    slidesPerView: 3.5,
+    slidesPerView: 4,
     freeMode: true,
     loop: true
  };
@@ -66,10 +66,10 @@ export class HomePage {
   ];
 
   populars = [
-    { img: '../../assets/img/5.jpg', name: 'Home cooking exp'},
-    { img: '../../assets/img/6.jpg', name: 'Yorhood resto'},
-    { img: '../../assets/img/3.jpg', name: 'La perla'},
-    { img: '../../assets/img/4.jpg', name: 'Peperon'},
+    { img: '../../assets/img/5.jpg', name: 'Home cooking exp', avis: 4},
+    { img: '../../assets/img/6.jpg', name: 'Yorhood resto', avis: 3},
+    { img: '../../assets/img/3.jpg', name: 'La perla', avis: 2},
+    { img: '../../assets/img/4.jpg', name: 'Peperon', avis: 3},
   ];
 
   
