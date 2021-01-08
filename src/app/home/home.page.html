@@ -64,6 +64,20 @@
             <span class="lc">{{'Double click on the food to add it on the cart'}}</span>
           </div>
         </div>
+        <div class="tbody">
+          <ion-slides [options]="slidesOpts">
+            <ion-slide *ngFor="let item of foods">
+              <ion-card>
+                <ion-card-header>
+                    <img [src]="item?.img" alt="">
+                </ion-card-header>
+                <ion-card-content>
+                  
+                </ion-card-content>
+              </ion-card>
+            </ion-slide>
+          </ion-slides>
+        </div>
     </div>
 
 
