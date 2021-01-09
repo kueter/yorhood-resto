@@ -27,6 +27,11 @@ const routes: Routes = [
         path: 'notifications',
         loadChildren: () => import('../notifications/notifications.module').then( m => m.NotificationsPageModule)
       },
+      {
+        path: '',
+        redirectTo: '/home/accueil',
+        pathMatch: 'full'
+      }
     ]
   }
 ];
