@@ -96,19 +96,11 @@ ion-footer {
                 }
 
                 ion-button {
-                    .bty {
-                        width: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                    }
-                }
-
-                .br {
                     width: 100%;
-                    --background: #c04326;
+                    --background: #FFF;
                     height: 50px;
-                    border-radius: .5rem;
+                    --border-radius: 20px;
+                    --border: 2px solid #c04326;
                 }
             }
         }
