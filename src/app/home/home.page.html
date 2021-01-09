@@ -1,4 +1,4 @@
-<ion-header class="ion-no-border content-bg ion-padding-bottom">
+<ion-header class="ion-no-border ion-padding-bottom">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button>
@@ -14,11 +14,34 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-  <ion-searchbar placeholder="Filter Pizza" class="nav_searchbar" inputmode="decimal" type="decimal" 
-  spellcheck="true" animated="true" autocomplete="true" autocorrect="true"
-  (ionChange)="onSearchChange($event)" [debounce]="250"></ion-searchbar>
+  <ion-searchbar placeholder="Filter Pizza" class="nav_searchbar" inputmode="decimal" type="decimal" spellcheck="true"
+    animated="true" autocomplete="true" autocorrect="true" (ionChange)="onSearchChange($event)" [debounce]="250">
+  </ion-searchbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="content-bg">
-
+<ion-content [fullscreen]="true">
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar>
+        <ion-tab-button tab="notifications">
+          <ion-icon name="notifications-outline"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="profile">
+          <ion-icon name="person-outline"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="accueil">
+          <ion-icon name="grid-outline"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="orders">
+          <ion-icon name="cart-outline"></ion-icon>
+        </ion-tab-button>
+        <ion-tab-button tab="favorites">
+          <ion-icon name="heart-outline"></ion-icon>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>
