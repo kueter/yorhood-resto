@@ -96,9 +96,6 @@ ion-footer {
                 }
 
                 ion-button {
-                    width: 100%;
-                    --background: #c04326;
-                    height: 50px;
                     .bty {
                         width: 100%;
                         display: flex;
@@ -109,6 +106,9 @@ ion-footer {
 
                 .br {
                     border-radius: .5rem;
+                    width: 100%;
+                    --background: #c04326;
+                    height: 50px;
                 }
             }
         }
