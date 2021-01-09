@@ -5,6 +5,14 @@
     align-items: center;
 
     .ih {
-        width: 50%;
+        width: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-size: 25px;
+            font-weight: bold;
+            color: #afb1b3;
+        }
     }
 }
