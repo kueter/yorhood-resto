@@ -77,13 +77,31 @@ ion-footer {
                     background: #c04326;
                     width: 50px;
                     height: 50px;
-                    border-radius: 50%;
+                    border-radius: 40%;
+
+                    ion-icon {
+                        color: #fff;
+                    }
                 }
             }
 
             .add_cart {
+                width: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
 
-
+                ion-button {
+                    width: 100%;
+                    --background: #c04326;
+                    .bty {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                    
+                    }
+                }
             }
         }
 
