@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { IonTabs } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  @ViewChild('tabs', { static: false }) tabs: IonTabs;
   
 
   
@@ -14,6 +15,10 @@ export class HomePage {
 
   onSearchChange(event) {
     console.log(event.target.value);
+  }
+
+  setCurrentTab() {
+
   }
 
 }

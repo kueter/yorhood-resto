@@ -1,4 +1,4 @@
-<ion-header class="ion-no-border ion-padding-bottom">
+<ion-header class="ion-no-border ion-padding-bottom bg">
   <ion-toolbar>
     <ion-buttons slot="start">
       <ion-button>
@@ -23,7 +23,7 @@
   <ion-router-outlet #o="outlet"></ion-router-outlet>
 </ion-content>
 
-<ion-tabs slot="top">
+<ion-tabs slot="top" #tabs (ionTabsDidChange)="setCurrentTab()">
   <ion-tab-bar>
     <ion-tab-button tab="notifications">
       <ion-icon name="notifications-outline"></ion-icon>
