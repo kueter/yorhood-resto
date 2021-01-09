@@ -69,9 +69,13 @@ ion-footer {
 
             .like {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
-                width: 20%;
+                width: 100%;
+
+                ion-buttons {
+                    width: 100%;
+                }
 
                 .circle {
                     background: #c04326;
@@ -86,22 +90,10 @@ ion-footer {
             }
 
             .add_cart {
-                width: 80%;
+                width: 60%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-
-                ion-buttons {
-                    width: 100%;
-                }
-
-                ion-button {
-                    width: 100%;
-                    --background: #FFF;
-                    height: 50px;
-                    --border-radius: 20px;
-                    --border: 2px solid #c04326;
-                }
             }
         }
 
