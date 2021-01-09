@@ -16,8 +16,7 @@ export class FoodDetailPage implements OnInit {
   ngOnInit() {
     this.route.params.subscribe(
       (_: any) => {
-         this.food = this.service.foods.filter((data: any) => data.id = _ );
-         console.log(this.food);
+         this.food = this.service.foods.filter((data: any) => data?.id == _?.id );
       }
     )
   }
