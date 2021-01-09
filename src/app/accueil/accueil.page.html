@@ -10,7 +10,7 @@
     <div class="tbody ion-margin-bottom">
         <div class="slides">
             <ion-slides [options]="slidesOptions">
-              <ion-slide *ngFor="let item of slides">
+              <ion-slide *ngFor="let item of service?.slides">
                   <ion-card>
                     <ion-card-header class="ion-no-padding">
                         <img [src]="item?.img" alt="">
@@ -44,7 +44,7 @@
     </div>
     <div class="tbody">
       <ion-slides [options]="slidesOpts">
-        <ion-slide *ngFor="let item of foods">
+        <ion-slide *ngFor="let item of service?.foods">
           <ion-card>
             <ion-card-header class="ion-no-padding" (click)="detail(item?.id)">
                 <img [src]="item?.img" alt="">
@@ -70,7 +70,7 @@
 
   <div class="tbody">
         <ion-slides [options]="slidesOpt">
-          <ion-slide *ngFor="let item of categories">
+          <ion-slide *ngFor="let item of service?.categories">
                 <ion-card>
                   <ion-card-content>
                     <div class="hd">
@@ -96,7 +96,7 @@
   <div class="tbody">
       <ion-grid fixed class="ion-no-padding">
         <ion-row>
-          <ion-col size="6" *ngFor="let item of populars">
+          <ion-col size="6" *ngFor="let item of service?.populars">
               <ion-card>
                 <ion-card-header>
                   <img [src]="item?.img" alt="" srcset="">

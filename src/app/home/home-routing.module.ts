@@ -29,7 +29,7 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/home/favorites',
+        redirectTo: '/home/accueil',
         pathMatch: 'full'
       }
     ]
