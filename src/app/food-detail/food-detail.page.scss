@@ -1,5 +1,8 @@
 ion-header {
+  position: relative;
   ion-toolbar {
+    position: absolute;
+    top: 0%;
     --background: transparent;
     ion-back-button {
       color: #fff;
@@ -8,10 +11,7 @@ ion-header {
   }
 
   img {
-    position: absolute;
     height: 300px;
-    top: 0;
-    left: 0;
   }
 
   .circle {
@@ -129,5 +129,23 @@ ion-content {
               }
             }
           }
+    }
+  }
+
+
+  .description {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & > span {
+      font-size: 17px;
+      font-weight: bold;
+      color: #5c5858;
+    }
+
+    .price-w {
+        display: grid;
     }
   }
