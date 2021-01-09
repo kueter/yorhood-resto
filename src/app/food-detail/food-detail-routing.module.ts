@@ -5,7 +5,7 @@ import { FoodDetailPage } from './food-detail.page';
 
 const routes: Routes = [
   {
-    path: '/:name',
+    path: '',
     component: FoodDetailPage
   }
 ];
