@@ -26,7 +26,40 @@
 .list-container {
     width: 100%;
 
-    ion-item {
-        border: none!important;
+    ion-card{
+        width: 100%;
+        .padding {
+            padding: 2px!important;
+        }
+        .v_ {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            img {
+                width: 25%;
+                width: 60px;
+                height: 60px;
+            }
+
+            .description {
+                width: 50%;
+                height: 60px;
+                overflow: hidden;
+                word-wrap: break-word;
+                text-align: justify;
+                text-justify: inter-word;
+                letter-spacing: 1;
+            }
+
+            .price {
+                width: 15%;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     }
 }
+

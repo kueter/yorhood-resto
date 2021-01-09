@@ -145,7 +145,7 @@ ion-header {
   
   .cata_trend_week {
     .theader {
-      width: 90%;
+      width: 100%;
       margin-bottom: 10px;
       display: flex;
       justify-content: space-between;
@@ -163,6 +163,7 @@ ion-header {
       }
       .arch-title {
         display: grid;
+        width: 80%;
         span.fc {
           font-weight: bold;
           font-size: 18px;
