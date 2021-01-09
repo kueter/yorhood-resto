@@ -54,7 +54,10 @@ ion-footer {
             }
 
             .adjust {
-
+                display: flex;
+                width: 20%;
+                align-items: center;
+                justify-content: space-between;
             }
 
             .like {
