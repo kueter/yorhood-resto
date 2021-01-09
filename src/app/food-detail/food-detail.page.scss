@@ -1,103 +1,118 @@
-
 ion-header {
-    ion-toolbar {
-        --background: transparent;
-        ion-back-button {
-            color: #fff;
-            box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
-        }
+  ion-toolbar {
+    --background: transparent;
+    ion-back-button {
+      color: #fff;
+      box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
     }
+  }
 
-    img {
-        position: absolute;
-        height: 300px;
-        top: 0;
-        left: 0;
-    }
+  img {
+    position: absolute;
+    height: 300px;
+    top: 0;
+    left: 0;
+  }
 
-    .circle {
-        width: 50px;
-        height: 50px;
-        border-radius: 10%;
-        background-color: #c04326;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        ion-icon {
-            color: #fff;
-        }
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: #c04326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ion-icon {
+      color: #fff;
     }
+  }
 }
 
 ion-content {
-    --background: #fafafa;
+  --background: #fafafa;
 }
 
-
 ion-footer {
-    ._container {
-            width: 100%;
-        ._f, ._g {
-            margin-left: auto;
-            margin-right: auto;
-            width: 85%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+  ._container {
+    width: 100%;
+    ._f,
+    ._g {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 10px;
+      width: 85%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-            .qte {
-                span {
-                    font-size: 16px;
-                    font-weight: bold;
-                    color: rgb(117, 117, 117);
-                }
-            }
+      .qte {
+        span {
+          font-size: 16px;
+          font-weight: bold;
+          color: rgb(117, 117, 117);
+        }
+      }
 
-            .adjust {
-                display: flex;
-                width: 20%;
-                align-items: center;
-                justify-content: space-between;
+      .adjust {
+        display: flex;
+        width: 20%;
+        align-items: center;
+        justify-content: space-between;
 
-                span {
-                    color: rgb(117, 117, 117);  
-                }
-                ion-icon {
-                    color: rgb(117, 117, 117);
-                }
-            }
+        span {
+          color: rgb(117, 117, 117);
+        }
+        ion-icon {
+          color: rgb(117, 117, 117);
+        }
+      }
 
-            .like {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
+      .like {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
 
-                ion-buttons {
-                    width: 100%;
-                }
-
-                .circle {
-                    background: #c04326;
-                    width: 50px;
-                    height: 50px;
-                    border-radius: 40%;
-
-                    ion-icon {
-                        color: #fff;
-                    }
-                }
-            }
-
-            .add_cart {
-                width: 70%;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-
-                
-            }
+        ion-buttons {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
         }
 
+        .circle {
+          background: #c04326;
+          width: 50px;
+          height: 50px;
+          border-radius: 40%;
+
+          ion-icon {
+            color: #fff;
+          }
+        }
+
+        .add_cart {
+          width: 70%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 2px solid #c04326;
+          height: 50px;
+          border-radius: 20px;
+
+          & > div {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                color: #c04326;
+                font-size: 12px;
+                font-weight: bold;
+            }
+          }
+        }
+      }
     }
+  }
 }
