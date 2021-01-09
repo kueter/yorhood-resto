@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-accueil',
@@ -73,9 +74,13 @@ export class AccueilPage implements OnInit {
   ];
 
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+  }
+
+  detail(name: string) {
+    this.router.navigate(['/food-detail', name]);
   }
 
 }
