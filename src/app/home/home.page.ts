@@ -8,17 +8,18 @@ import { IonTabs } from '@ionic/angular';
 })
 export class HomePage {
   @ViewChild('tabs', { static: false }) tabs: IonTabs;
-  
+  selectedTab: any;
 
   
   constructor() {}
 
-  onSearchChange(event) {
+  onSearchChange(event: any) {
     console.log(event.target.value);
   }
 
   setCurrentTab() {
-
+    this.selectedTab = this.tabs.getSelected();
+    console.log(this.selectedTab);
   }
 
 }
