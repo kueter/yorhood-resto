@@ -19,7 +19,6 @@ export class HomePage {
 
   setCurrentTab() {
     this.selectedTab = this.tabs.getSelected();
-    console.log(this.selectedTab);
   }
 
 }
