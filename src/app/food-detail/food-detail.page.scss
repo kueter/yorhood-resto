@@ -86,7 +86,7 @@ ion-footer {
             }
 
             .add_cart {
-                width: 60%;
+                width: 80%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -98,13 +98,17 @@ ion-footer {
                 ion-button {
                     width: 100%;
                     --background: #c04326;
+                    height: 50px;
                     .bty {
                         width: 100%;
                         display: flex;
                         align-items: center;
                         justify-content: space-between;
-                    
                     }
+                }
+
+                .br {
+                    border-radius: .5rem;
                 }
             }
         }
