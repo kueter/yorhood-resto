@@ -58,6 +58,13 @@ ion-footer {
                 width: 20%;
                 align-items: center;
                 justify-content: space-between;
+
+                span {
+                    color: rgb(117, 117, 117);  
+                }
+                ion-icon {
+                    color: rgb(117, 117, 117);
+                }
             }
 
             .like {
