@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-food-detail',
@@ -10,12 +11,13 @@ export class FoodDetailPage implements OnInit {
 
   food: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private service: DataService) { }
 
   ngOnInit() {
     this.route.params.subscribe(
-      (_) => {
-        console.log(_);
+      (_: any) => {
+         this.food = this.service.foods.filter((data: any) => data.id = _ );
+         console.log(this.food);
       }
     )
   }
