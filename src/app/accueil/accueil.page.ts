@@ -50,12 +50,12 @@ export class AccueilPage implements OnInit {
   ];
 
   foods = [
-    { img: '../../assets/img/f1.jpg', price: 12.5, name: 'Donuts'},
-    { img: '../../assets/img/f2.jpg', price: 25, name: 'Frites'},
-    { img: '../../assets/img/f3.jpg', price: 26, name: 'Vegane'},
-    { img: '../../assets/img/f4.jpg', price: 23, name: 'Brochette'},
-    { img: '../../assets/img/f5.jpg', price: 70, name: 'Poulet'},
-    { img: '../../assets/img/f6.jpg', price: 100, name: 'Melange'},
+    {id: 1, img: '../../assets/img/f1.jpg', price: 12.5, name: 'Donuts'},
+    {id: 2, img: '../../assets/img/f2.jpg', price: 25, name: 'Frites'},
+    {id: 3, img: '../../assets/img/f3.jpg', price: 26, name: 'Vegane'},
+    {id: 4, img: '../../assets/img/f4.jpg', price: 23, name: 'Brochette'},
+    {id: 5, img: '../../assets/img/f5.jpg', price: 70, name: 'Poulet'},
+    {id: 6, img: '../../assets/img/f6.jpg', price: 100, name: 'Melange'},
   ];
 
   categories = [
@@ -79,8 +79,8 @@ export class AccueilPage implements OnInit {
   ngOnInit() {
   }
 
-  detail(name: string) {
-    this.router.navigate(['/food-detail', name]);
+  detail(id: number) {
+    this.router.navigate(['/food-detail', id]);
   }
 
 }

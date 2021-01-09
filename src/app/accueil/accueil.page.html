@@ -45,7 +45,7 @@
     <div class="tbody">
       <ion-slides [options]="slidesOpts">
         <ion-slide *ngFor="let item of foods">
-          <ion-card (click)="detail(item?.name)">
+          <ion-card (click)="detail(item?.id)">
             <ion-card-header class="ion-no-padding">
                 <img [src]="item?.img" alt="">
                 <div class="bdge">{{'$'+item?.price}}</div>
