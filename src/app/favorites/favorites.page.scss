@@ -25,4 +25,8 @@
 
 .list-container {
     width: 100%;
+
+    ion-item {
+        border: none!important;
+    }
 }
