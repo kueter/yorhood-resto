@@ -16,7 +16,6 @@ export class FoodDetailPage implements OnInit {
     this.route.params.subscribe(
       (_: any) => {
          this.food = this.service.foods.filter((data: any) => data?.id == _?.id);
-         console.log(this.food);
       }
     );
   }
