@@ -91,6 +91,10 @@ ion-footer {
                 justify-content: center;
                 align-items: center;
 
+                ion-buttons {
+                    width: 100%;
+                }
+
                 ion-button {
                     width: 100%;
                     --background: #c04326;
