@@ -11,14 +11,18 @@ export class FoodDetailPage implements OnInit {
 
   food: any;
 
-  constructor(private route: ActivatedRoute, private service: DataService) { }
-
-  ngOnInit() {
+  constructor(private route: ActivatedRoute, private service: DataService) {
+    
     this.route.params.subscribe(
       (_: any) => {
-         this.food = this.service.foods.filter((data: any) => data?.id == _?.id );
+         this.food = this.service.foods.filter((data: any) => data?.id == _?.id);
+         console.log(this.food);
       }
-    )
+    );
+  }
+
+  ngOnInit() {
+   
   }
 
 }

@@ -1,0 +1,18 @@
+
+ion-header {
+    ion-toolbar {
+        --background: transparent;
+        ion-back-button {
+            color: #fff;
+            box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
+        }
+    }
+
+    img {
+        position: absolute;
+        height: 300px;
+        top: 0;
+        left: 0;
+    }
+}
+
