@@ -94,3 +94,35 @@ ion-header {
   }
   
 }
+
+.informations {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+
+  ion-icon {
+    color: #5c5858;
+    font-size: 30px;
+  }
+
+  .title {
+    display: grid;
+    width: 80%;
+
+    span:first-child {
+      font-size: 22px;
+      font-weight: bold;
+      color: #5c5858;
+    }
+
+    span:last-child {
+      font-size: 14px;
+      color: #a19c9c;
+    }
+  }
+}
