@@ -102,9 +102,12 @@
 
 
 .v-item {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   img {
-
+    width: 20%;
   }
 
   .adjust {
@@ -119,7 +122,7 @@
   }
 
   .description {
-    
+
   }
 
 }
