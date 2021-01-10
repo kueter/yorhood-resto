@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .ach-ci {
       display: flex;
       align-items: center;
@@ -21,6 +22,7 @@
       overflow: hidden;
       background-color: #ffff;
     }
+
     .arch-title {
       display: grid;
       span.fc {
@@ -34,4 +36,5 @@
         color: #77797a;
       }
     }
-  }
+    
+}
