@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../data.service';
 
@@ -12,7 +12,7 @@ export class FoodDetailPage implements OnInit {
   food: any;
   reduce = false;
 
-  constructor(private route: ActivatedRoute, public service: DataService) {
+  constructor(private route: ActivatedRoute, public service: DataService, private renderer: Renderer2) {
     
     this.route.params.subscribe(
       (_: any) => {
@@ -22,29 +22,11 @@ export class FoodDetailPage implements OnInit {
   }
 
   ngOnInit() {
-   
+    
   }
 
-  onScroll(event: any) {
-    console.log(event.detail.scrollTop)
-    console.log('im scrolling')
-
-    if(document.documentElement.scrollTop > 20) {
-      this.reduce = true;
-      console.log(this.reduce);
-    }
-
-    if(document.documentElement.scrollTop < 47) {
-      this.reduce = false;
-      console.log(this.reduce);
-    }
-  }
-
-  scrolling(event) {
+  onScroll(event){
     console.log(event);
   }
 
-  scrollComplete(event) {
-    console.log(event);
-  }
 }
