@@ -1,6 +1,7 @@
-import { Component, HostListener, OnInit, Renderer2 } from '@angular/core';
+import { Component, HostListener, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../data.service';
+
 
 @Component({
   selector: 'app-food-detail',
@@ -12,7 +13,7 @@ export class FoodDetailPage implements OnInit {
   food: any;
   reduce = false;
 
-  constructor(private route: ActivatedRoute, public service: DataService, private renderer: Renderer2) {
+  constructor(private route: ActivatedRoute, public service: DataService) {
     
     this.route.params.subscribe(
       (_: any) => {
@@ -25,8 +26,5 @@ export class FoodDetailPage implements OnInit {
     
   }
 
-  onScroll(event){
-    console.log(event);
-  }
-
+ 
 }
