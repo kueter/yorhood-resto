@@ -101,6 +101,30 @@
 }
 
 
+.v-item {
+
+  img {
+
+  }
+
+  .adjust {
+    display: grid;
+    width: 20%;
+    span {
+      color: rgb(117, 117, 117);
+    }
+    ion-icon {
+      color: rgb(117, 117, 117);
+    }
+  }
+
+  .description {
+    
+  }
+
+}
+
+
 .qte {
   span {
     font-size: 16px;
@@ -109,16 +133,3 @@
   }
 }
 
-.adjust {
-  display: flex;
-  width: 20%;
-  align-items: center;
-  justify-content: space-between;
-
-  span {
-    color: rgb(117, 117, 117);
-  }
-  ion-icon {
-    color: rgb(117, 117, 117);
-  }
-}
