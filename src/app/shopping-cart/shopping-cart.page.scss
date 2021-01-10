@@ -90,11 +90,11 @@
       .add_cart {
         width: 80%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
-        background-color: #c04326;
+        --background: #c04326;
         height: 50px;
-        border-radius: 20px;
+        --border-radius: 2rem;
 
         & > div {
           width: 100%;
