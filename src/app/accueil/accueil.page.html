@@ -11,7 +11,7 @@
         <div class="slides">
             <ion-slides [options]="slidesOptions">
               <ion-slide *ngFor="let item of service?.restos">
-                  <ion-card>
+                  <ion-card (click)="detailresto(item?.id)">
                     <ion-card-header class="ion-no-padding">
                         <img [src]="item?.img" alt="">
                     </ion-card-header>
@@ -46,7 +46,7 @@
       <ion-slides [options]="slidesOpts">
         <ion-slide *ngFor="let item of service?.foods">
           <ion-card>
-            <ion-card-header class="ion-no-padding" (click)="detail(item?.id)">
+            <ion-card-header class="ion-no-padding" (click)="detailfood(item?.id)">
                 <img [src]="item?.img" alt="">
                 <div class="bdge">{{'$'+item?.price}}</div>
             </ion-card-header>

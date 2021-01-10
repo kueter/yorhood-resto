@@ -43,8 +43,12 @@ export class AccueilPage implements OnInit {
   ngOnInit() {
   }
 
-  detail(id: number) {
+  detailfood(id: number) {
     this.router.navigate(['/food-detail', id]);
+  }
+
+  detailresto(id: number) {
+    this.router.navigate(['/resto-detail',id]);
   }
 
 }

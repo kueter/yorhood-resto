@@ -1,7 +1,17 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>resto-detail</ion-title>
+<ion-header class="ion-no-border">
+  <img [src]="resto[0]?.img" alt="">
+  <ion-toolbar class="ion-no-border">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button class="circle ion-text-center">
+        <ion-icon name="cart"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
+
 </ion-header>
 
 <ion-content>
