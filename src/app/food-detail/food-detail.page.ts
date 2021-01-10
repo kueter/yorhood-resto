@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, ActivatedRouteSnapshot } from '@angular/router';
+import { Component, HostListener, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { DataService } from '../data.service';
 
 @Component({
@@ -10,6 +10,7 @@ import { DataService } from '../data.service';
 export class FoodDetailPage implements OnInit {
 
   food: any;
+  reduce = false;
 
   constructor(private route: ActivatedRoute, public service: DataService) {
     
@@ -22,6 +23,17 @@ export class FoodDetailPage implements OnInit {
 
   ngOnInit() {
    
+  }
+
+  @HostListener('window:scroll', [])
+  onScroll() {
+    if(document.documentElement.scrollTop >= 47) {
+      this.reduce = true;
+    }
+
+    if(document.documentElement.scrollTop < 47) {
+      this.reduce = false;
+    }
   }
 
 }

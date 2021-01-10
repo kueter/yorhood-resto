@@ -47,7 +47,7 @@ export class DataService {
   nutritions = [
     { name:'Lipide', qt: 63 },
     { name:'Sugar', qt: 100 },
-    { name:'Proteins', qt: 14 },
+    // { name:'Proteins', qt: 14 },
     { name:'Sugar', qt: 14 },
   
   ];
