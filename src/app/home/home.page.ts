@@ -23,7 +23,7 @@ export class HomePage {
   }
 
   shoppingCart () {
-    this.router.navigate(['/shopping-cart']);
+    this.router.navigateByUrl('shopping-cart');
   }
 
 }
