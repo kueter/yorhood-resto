@@ -3,6 +3,10 @@
     font-weight: bold;
 }
 
+ion-header {
+  --backfround:#FAFAFA;
+}
+
 .theader {
     width: 80%;
     margin-right: auto;
@@ -112,13 +116,13 @@ ion-content {
   height: 80px;
 
   img {
-    width: 16%;
-    height: 40px;
+    width: 25%;
+    height: 60px;
   }
 
   .adjust {
     display: grid;
-    width: 20%;
+    width: 10%;
     span {
       color: rgb(117, 117, 117);
     }
@@ -128,7 +132,12 @@ ion-content {
   }
 
   .description {
-      width: 60%;
+      width: 40%;
+      display: grid;
+      span {
+        color: #77797a;
+        font-size: 20px;
+      }
   }
 
 }
