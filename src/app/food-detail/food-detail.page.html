@@ -14,7 +14,7 @@
 
 </ion-header>
 
-<ion-content [scrollEvents]="true">
+<ion-content (ionScroll)="scrolling($event)" (ionScrollEnd)="scrollComplete($event)">
   
     <div class="description">
           <span>{{food[0]?.name}}</span>

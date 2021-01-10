@@ -25,7 +25,6 @@ export class FoodDetailPage implements OnInit {
    
   }
 
-  @HostListener('ionScroll', ['$event'])
   onScroll(event: any) {
     console.log(event.detail.scrollTop)
     console.log('im scrolling')
@@ -39,6 +38,14 @@ export class FoodDetailPage implements OnInit {
       this.reduce = false;
       console.log(this.reduce);
     }
+  }
+
+  scrolling() {
+
+  }
+
+  scrollComplete() {
+
   }
 
 }
