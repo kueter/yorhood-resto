@@ -7,7 +7,14 @@ export class DataService {
 
 
   restos = [
-    { id: 1, img: '../assets/img/1.jpg', name: 'Home Cooking Experience', star: 4},
+    { id: 1, img: '../assets/img/1.jpg', name: 'Home Cooking Experience', star: 4, 
+      parts: [
+        { img: '../assets/img/1-1.jpg'},
+        { img: '../assets/img/1-2.jpg'},
+        { img: '../assets/img/1-3.jpg'},
+        { img: '../assets/img/1-4.jpg'}
+      ]
+    },
     { id: 2, img: '../assets/img/2.jpg', name: 'Dreams', star: 3},
     { id: 3, img: '../assets/img/3.jpg', name: 'Meet pot', star: 5},
     { id: 4, img: '../assets/img/4.jpg', name: 'King Pot', star: 4},
