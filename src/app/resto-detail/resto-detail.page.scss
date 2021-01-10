@@ -37,9 +37,7 @@ ion-header {
 
 .description {
   margin-top: 15px;
-  width: 93%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -75,9 +73,7 @@ ion-header {
 .dtext {
   margin-top: 15px;
   word-wrap: break-word;
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
   text-align: justify;
   text-justify: inter-word;
   font-size: 15px;
@@ -86,12 +82,12 @@ ion-header {
 
 .resto-parts {
   width: 100%;
-
   .i-view {
     width: 100%;
 
     img {
       width: 100%;
+      height: 150px;
     }
   }
   
