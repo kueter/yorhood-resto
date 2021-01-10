@@ -98,32 +98,34 @@ ion-content {
             }
     
             .circle {
-              background: #c04326;
+              background: #fff;
               width: 50px;
               height: 50px;
               border-radius: 40%;
-    
+              border: 2px solid #c04326;
               ion-icon {
-                color: #fff;
+                color: #c04326;
               }
             }
     
             .add_cart {
-              width: 70%;
+              width: 80%;
               display: flex;
               justify-content: center;
               align-items: center;
-              border: 2px solid #c04326;
+              background-color: #c04326;
               height: 50px;
               border-radius: 20px;
     
               & > div {
                 width: 100%;
+                padding-left:5px;
+                padding-right: 5px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 span {
-                    color: #c04326;
+                    color: #FFF;
                     font-size: 12px;
                     font-weight: bold;
                 }
@@ -206,4 +208,8 @@ ion-content {
 
   .item .item-inner {
     padding-left: 0px;
+  }
+
+  .v_item {
+    
   }
