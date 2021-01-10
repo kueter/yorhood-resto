@@ -40,12 +40,11 @@ export class FoodDetailPage implements OnInit {
     }
   }
 
-  scrolling() {
-
+  scrolling(event) {
+    console.log(event);
   }
 
-  scrollComplete() {
-
+  scrollComplete(event) {
+    console.log(event);
   }
-
 }
