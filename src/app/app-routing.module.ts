@@ -24,7 +24,7 @@ const routes: Routes = [
     loadChildren: () => import('./food-detail/food-detail.module').then( m => m.FoodDetailPageModule)
   },
   {
-    path: 'resto-detail',
+    path: 'resto-detail/:id',
     loadChildren: () => import('./resto-detail/resto-detail.module').then( m => m.RestoDetailPageModule)
   }
 ];

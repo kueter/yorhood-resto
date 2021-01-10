@@ -6,12 +6,12 @@ import { Injectable } from '@angular/core';
 export class DataService {
 
 
-  slides = [
-    { img: '../assets/img/1.jpg'},
-    { img: '../assets/img/2.jpg'},
-    { img: '../assets/img/3.jpg'},
-    { img: '../assets/img/4.jpg'},
-    { img: '../assets/img/5.jpg'},
+  restos = [
+    { img: '../assets/img/1.jpg', name: ''},
+    { img: '../assets/img/2.jpg', name: ''},
+    { img: '../assets/img/3.jpg', name: ''},
+    { img: '../assets/img/4.jpg', name: ''},
+    { img: '../assets/img/5.jpg', name: ''},
   ];
 
   foods = [
