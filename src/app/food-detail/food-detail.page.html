@@ -38,15 +38,15 @@
     </div>
     <div class="extra_list">
       <ion-list lines="none">
-        <ion-item>
+        <ion-item *ngFor="let item of service?.extras">
             <div class="v_item">
                   <img src="../../assets/img/e1.jpg" alt="" srcset="">
                   <div class="detail">
-                      <span>{{'Mozza'}}</span>
-                      <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat, adipisci.</span>
+                      <span>{{item?.name}}</span>
+                      <span>{{'Add some'+ item?.name }}</span>
                   </div>
                   <div class="price">
-                      <span>{{'$1.00'}}</span>
+                      <span>{{'$'+ item?.price}}</span>
                   </div>
             </div>
         </ion-item>

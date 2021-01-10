@@ -11,7 +11,7 @@ export class FoodDetailPage implements OnInit {
 
   food: any;
 
-  constructor(private route: ActivatedRoute, private service: DataService) {
+  constructor(private route: ActivatedRoute, public service: DataService) {
     
     this.route.params.subscribe(
       (_: any) => {
