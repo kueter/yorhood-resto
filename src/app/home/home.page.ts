@@ -1,4 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { IonTabs } from '@ionic/angular';
 
 @Component({
@@ -11,7 +12,7 @@ export class HomePage {
   selectedTab: any;
 
   
-  constructor() {}
+  constructor(private router: Router) {}
 
   onSearchChange(event: any) {
     console.log(event.target.value);
@@ -19,6 +20,10 @@ export class HomePage {
 
   setCurrentTab() {
     this.selectedTab = this.tabs.getSelected();
+  }
+
+  shoppingCart () {
+    this.router.navigate(['/shopping-cart']);
   }
 
 }
