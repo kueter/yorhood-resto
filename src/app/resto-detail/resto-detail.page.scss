@@ -127,6 +127,14 @@ ion-header {
   }
 }
 
-.btn-me {
-  
+.btn-menu {
+  position: fixed;
+  bottom: 5%;
+  right: 3%;
+  --background: #c04326;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100px;
 }
