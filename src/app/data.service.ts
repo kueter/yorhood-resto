@@ -44,7 +44,13 @@ export class DataService {
     { img: '../assets/img/e3.png', name: 'tuna', price: 3.00 },
   ];
 
-  ingredients = [];
+  nutritions = [
+    { name:'Lipide', qt: 63 },
+    { name:'Sugar', qt: 100 },
+    { name:'Proteins', qt: 14 },
+    { name:'Sugar', qt: 14 },
+  
+  ];
 
 
   constructor() { }
