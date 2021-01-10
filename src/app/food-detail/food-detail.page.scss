@@ -31,6 +31,7 @@ ion-header {
 
 ion-content {
   --background: #fafafa;
+  --padding-bottom: 10rem;
 }
 
 
@@ -174,7 +175,7 @@ ion-content {
     color: #a19c9c;
   }
 
-  .extra {
+  .extra, .ingredients {
     margin-top: 25px;
     display: flex;
     align-items: center;
