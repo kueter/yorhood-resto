@@ -79,7 +79,7 @@
             <ion-col size="3">
               <ion-card>
                 <ion-card-content>
-                  Awesome content
+                  
                 </ion-card-content>
               </ion-card>
             </ion-col>
@@ -89,40 +89,42 @@
 
 </ion-content>
 
-
-<div class="_container">
-  <div class="_f">
-    <div class="qte">
-      <span>{{'Quantity'}}</span>
+<ion-footer>
+  <div class="_container">
+    <div class="_f">
+      <div class="qte">
+        <span>{{'Quantity'}}</span>
+      </div>
+      <div class="adjust">
+        <ion-buttons>
+          <ion-button>
+            <ion-icon name="remove-circle-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+        <span>{{1.0}}</span>
+        <ion-buttons>
+          <ion-button>
+            <ion-icon name="add-circle-outline"></ion-icon>
+          </ion-button>
+        </ion-buttons>
+      </div>
+  
     </div>
-    <div class="adjust">
-      <ion-buttons>
-        <ion-button>
-          <ion-icon name="remove-circle-outline"></ion-icon>
-        </ion-button>
-      </ion-buttons>
-      <span>{{1.0}}</span>
-      <ion-buttons>
-        <ion-button>
-          <ion-icon name="add-circle-outline"></ion-icon>
-        </ion-button>
-      </ion-buttons>
+    <div class="_g">
+      <div class="like">
+        <ion-buttons>
+          <ion-button class="circle">
+            <ion-icon name="heart"></ion-icon>
+          </ion-button>
+          <ion-button class="add_cart">
+            <div>
+              <span>{{'Add to cart'}}</span>
+              <span>{{'$8.00'}}</span>
+            </div>
+          </ion-button>
+        </ion-buttons>
+      </div>
     </div>
-
   </div>
-  <div class="_g">
-    <div class="like">
-      <ion-buttons>
-        <ion-button class="circle">
-          <ion-icon name="heart"></ion-icon>
-        </ion-button>
-        <ion-button class="add_cart">
-          <div>
-            <span>{{'Add to cart'}}</span>
-            <span>{{'$8.00'}}</span>
-          </div>
-        </ion-button>
-      </ion-buttons>
-    </div>
-  </div>
-</div>
+</ion-footer>
+

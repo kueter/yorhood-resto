@@ -40,13 +40,16 @@ ion-content {
     }
 }
 
+ion-footer {
+  --background: #fafafa;
+}
 
 
   ._container {
     width: 100%;
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
+    // position: absolute;
+    // bottom: 0%;
+    // left: 0%;
     background-color: #fff;
     border-top-left-radius: 3rem;
     border-top-right-radius: 3rem;
