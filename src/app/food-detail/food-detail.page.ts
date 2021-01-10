@@ -34,6 +34,7 @@ export class FoodDetailPage implements OnInit {
     if(document.documentElement.scrollTop < 47) {
       this.reduce = false;
     }
+    
   }
 
 }
