@@ -9,7 +9,15 @@ import { DataService } from '../data.service';
 })
 export class RestoDetailPage implements OnInit {
 
-  resto
+  resto: any;
+
+  slidesOptions = {
+    // initialSlide: 0,
+    direction: 'horizontal',
+    speed: 300,
+    // effect: slide,
+    slidesPerView: 1.5
+  };
 
   constructor(public service: DataService,private route: ActivatedRoute) { 
     this.route.params.subscribe(
