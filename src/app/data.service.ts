@@ -39,9 +39,9 @@ export class DataService {
   ];
 
   extras = [
-    { img: '../assets/img/e1.jpg', name: 'Mozzarella', price: 1.00 },
-    { img: '../assets/img/e2.jpg', name: 'Mozzarella', price: 2.00 },
-    { img: '../assets/img/e3.jpg', name: 'Mozzarella', price: 3.00 },
+    { img: '../assets/img/e1.jpg', name: 'mozzarella', price: 1.00 },
+    { img: '../assets/img/e2.jpg', name: 'vegetal oil', price: 2.00 },
+    { img: '../assets/img/e3.png', name: 'tuna', price: 3.00 },
   ];
 
   ingredients = [];
