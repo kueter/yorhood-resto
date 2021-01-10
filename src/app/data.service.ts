@@ -7,11 +7,11 @@ export class DataService {
 
 
   restos = [
-    { img: '../assets/img/1.jpg', name: ''},
-    { img: '../assets/img/2.jpg', name: ''},
-    { img: '../assets/img/3.jpg', name: ''},
-    { img: '../assets/img/4.jpg', name: ''},
-    { img: '../assets/img/5.jpg', name: ''},
+    { id: 1, img: '../assets/img/1.jpg', name: ''},
+    { id: 2, img: '../assets/img/2.jpg', name: ''},
+    { id: 3, img: '../assets/img/3.jpg', name: ''},
+    { id: 4, img: '../assets/img/4.jpg', name: ''},
+    { id: 5, img: '../assets/img/5.jpg', name: ''},
   ];
 
   foods = [
