@@ -173,8 +173,32 @@ ion-content {
   }
 
   .extra {
+    margin-top: 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+
+    ion-icon {
+      color: #5c5858;
+      font-size: 20px;
+    }
+
+    .title {
+      display: grid;
+      width: 80%;
+
+      span:first-child {
+        font-size: 17px;
+        font-weight: bold;
+        color: #5c5858;
+      }
+
+      span:last-child {
+        font-size: 14px;
+        color: #a19c9c;
+      }
+    }
   }
