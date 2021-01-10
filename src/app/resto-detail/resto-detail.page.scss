@@ -1,31 +1,85 @@
 ion-header {
-    position: relative;
-    ion-toolbar {
-      position: absolute;
-      top: 0%;
-      --background: transparent;
-      ion-back-button {
-        color: #fff;
-        box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
-      }
-    }
-  
-    img {
-      width: 100%;
-      height: 300px;
-    }
-  
-    .circle {
-      width: 50px;
-      height: 50px;
-      border-radius: 10%;
-      background-color: #c04326;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      ion-icon {
-        color: #fff;
-        font-size: 50px;
-      }
+  position: relative;
+  ion-toolbar {
+    position: absolute;
+    top: 0%;
+    --background: transparent;
+    ion-back-button {
+      color: #fff;
+      box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
     }
   }
+
+  img {
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 10%;
+    background-color: #c04326;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ion-icon {
+      color: #fff;
+      font-size: 50px;
+    }
+  }
+}
+
+
+
+.description {
+  margin-top: 15px;
+  width: 93%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & > span {
+    font-size: 23px;
+    font-weight: bold;
+    color: #5c5858;
+    overflow: hidden;
+  }
+
+  .price-w {
+     background-color: #c04326;
+     border-radius: .5rem;
+     display: flex;
+     align-items: center;
+     width: 40px;
+     height: 22px;
+     justify-content: space-between;
+      padding: 6px;
+      span{
+        font-size: 16px;
+        color: #fff;
+        font-weight: bold;
+      }
+
+      ion-icon {
+        color: #fff;
+      }
+  }
+}
+
+.dtext {
+  margin-top: 15px;
+  word-wrap: break-word;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 15px;
+  color: #a19c9c;
+}
