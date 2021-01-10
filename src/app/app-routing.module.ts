@@ -26,6 +26,10 @@ const routes: Routes = [
   {
     path: 'resto-detail/:id',
     loadChildren: () => import('./resto-detail/resto-detail.module').then( m => m.RestoDetailPageModule)
+  },
+  {
+    path: 'shopping-cart',
+    loadChildren: () => import('./shopping-cart/shopping-cart.module').then( m => m.ShoppingCartPageModule)
   }
 ];
 
