@@ -32,7 +32,14 @@ ion-header {
 ion-content {
   --background: #fafafa;
   --padding-bottom: 10rem;
+    --offset-bottom: auto !important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 }
+
 
 
   ._container {

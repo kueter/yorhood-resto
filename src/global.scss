@@ -38,11 +38,3 @@ body {
     --padding-top: 130px;
 }
 
-ion-content {
-    // --offset-bottom: auto !important;
-    --overflow: hidden;
-    overflow: auto;
-    &::-webkit-scrollbar {
-      display: none;
-    }
-}
