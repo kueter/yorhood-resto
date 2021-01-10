@@ -212,5 +212,46 @@ ion-content {
   }
 
   .v_item {
-    
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      img {
+        width: 30%;
+        height: 40px;
+      }
+
+      .detail {
+        width: 60%;
+        height: 40%;
+        display: grid;
+        word-wrap: break-word;
+        text-align: justify;
+        text-justify: inter-word;
+        span:first-child {
+          font-size: 17px;
+          font-weight: bold;
+          color: #5c5858;
+        }
+  
+        span:last-child {
+          font-size: 14px;
+          color: #a19c9c;
+        }
+      }
+
+      .price {
+        width: 10%;
+        height: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        span {
+          font-size: 17px;
+          font-weight: bold;
+          color: #5c5858;
+        }
+      }
+
   }
