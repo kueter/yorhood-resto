@@ -33,9 +33,9 @@
 
 <div class="resto-parts">
     <ion-slides [options]="slidesOptions">
-      <ion-slide>
+      <ion-slide *ngFor="let item of resto?.parts">
           <div class="i-view">
-            <img src="../../assets/img/1.jpg" alt="">
+            <img [src]="item?.img" alt="">
           </div>
       </ion-slide>
     </ion-slides>
