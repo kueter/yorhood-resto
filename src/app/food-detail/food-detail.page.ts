@@ -25,16 +25,20 @@ export class FoodDetailPage implements OnInit {
    
   }
 
-  @HostListener('window:scroll', [])
-  onScroll() {
-    if(document.documentElement.scrollTop >= 47) {
+  @HostListener('ionScroll', ['$event'])
+  onScroll(event: any) {
+    console.log(event.detail.scrollTop)
+    console.log('im scrolling')
+
+    if(document.documentElement.scrollTop > 20) {
       this.reduce = true;
+      console.log(this.reduce);
     }
 
     if(document.documentElement.scrollTop < 47) {
       this.reduce = false;
+      console.log(this.reduce);
     }
-    
   }
 
 }
