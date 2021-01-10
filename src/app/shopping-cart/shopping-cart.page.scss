@@ -3,7 +3,7 @@
 }
 
 .theader {
-    width: 55%;
+    width: 80%;
     margin-right: auto;
     margin-bottom: 10px;
     padding-left: 12px;
@@ -11,16 +11,9 @@
     justify-content: space-between;
     align-items: center;
 
-    .ach-ci {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 35px;
-      height: 35px;
-      border-radius: 0.4rem;
-      box-shadow: 0px 10px 30px 0px rgba(57, 71, 82, 0.12);
-      overflow: hidden;
-      background-color: #ffff;
+    ion-icon {
+        font-size: 40px;
+        color: #77797a;
     }
 
     .arch-title {
@@ -36,5 +29,5 @@
         color: #77797a;
       }
     }
-    
+
 }
