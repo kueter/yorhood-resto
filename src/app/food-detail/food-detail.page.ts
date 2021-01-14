@@ -36,6 +36,7 @@ export class FoodDetailPage implements OnInit {
 
   decrease() {
     this.qte >= 2 ? this.qte-- : this.qte = 1;
+    
   }
  
 }
