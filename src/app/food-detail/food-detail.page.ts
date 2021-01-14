@@ -41,5 +41,16 @@ export class FoodDetailPage implements OnInit {
     this.qte >= 2 ? this.qte-- : this.qte = 1;
     this.mount - this.price >= this.price ? this.mount = this.mount - this.price: this.mount = this.price;
   }
+
+  addToCart() {
+    const fd = {
+      id: this.food[0]?.id,
+      img: this.food[0]?.img,
+      name: this.food[0]?.name,
+      price: this.mount
+    };
+
+    console.log(fd);
+  }
  
 }
