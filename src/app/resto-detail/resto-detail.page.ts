@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { DataService } from '../data.service';
 
 @Component({
@@ -19,7 +19,7 @@ export class RestoDetailPage implements OnInit {
     slidesPerView: 1.5
   };
 
-  constructor(public service: DataService,private route: ActivatedRoute) { 
+  constructor(public service: DataService,private route: ActivatedRoute, private router: Router) { 
     this.route.params.subscribe(
       (_: any) => {
          this.resto = this.service.restos.filter((data: any) => data?.id == _?.id);
@@ -28,6 +28,11 @@ export class RestoDetailPage implements OnInit {
   }
 
   ngOnInit() {
+  }
+
+
+  showMenu(id: any) {
+    this.router.navigate(['/resto-menu', id]);
   }
 
 }
