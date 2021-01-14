@@ -31,7 +31,7 @@ export class FoodDetailPage implements OnInit {
 
   increase() {
     this.qte ++;
-
+    this.mount = this.mount * this.qte;
   }
 
   decrease() {
