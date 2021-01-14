@@ -47,8 +47,10 @@ export class LoginPage implements OnInit {
     if(form.email === 'roodolphe@gmail.com' && form.password === '12345678') {
       this.router.navigateByUrl('home');
     }
+    else {
+      this.presentToast();
+    }
     this.LoginForm.reset();
-    this.presentToast();
   }
 
 
@@ -56,7 +58,7 @@ export class LoginPage implements OnInit {
     const toast = await this.toastController.create({
       message: 'Error Login failed',
       duration: 2000,
-      color: 'danger'
+      color: 'dark'
     });
     toast.present();
   }
