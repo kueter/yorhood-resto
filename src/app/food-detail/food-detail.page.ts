@@ -12,6 +12,7 @@ export class FoodDetailPage implements OnInit {
 
   food: any;
   reduce = false;
+  qte = 1;
 
   constructor(private route: ActivatedRoute, public service: DataService) {
     
