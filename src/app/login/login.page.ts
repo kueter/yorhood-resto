@@ -40,4 +40,12 @@ export class LoginPage implements OnInit {
   get email() {
     return this.LoginForm.get('email');
   }
+
+  login() {
+    const form = this.LoginForm.value;
+    if(form.email === 'ed23@gmail.com' && form.password === '12345678') {
+      this.router.navigateByUrl('home');
+    }
+
+  }
 }
