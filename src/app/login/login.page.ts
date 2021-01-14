@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class LoginPage implements OnInit {
 
   LoginForm: FormGroup;
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public toastController: ToastController) { }
 
   ngOnInit() {
     this.initForm();
@@ -47,5 +48,15 @@ export class LoginPage implements OnInit {
       this.router.navigateByUrl('home');
     }
 
+    this.presentToast();
+  }
+
+
+  async presentToast() {
+    const toast = await this.toastController.create({
+      message: 'Error Login failed',
+      duration: 2000
+    });
+    toast.present();
   }
 }
