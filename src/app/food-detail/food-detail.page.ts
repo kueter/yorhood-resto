@@ -21,9 +21,11 @@ export class FoodDetailPage implements OnInit {
     this.route.params.subscribe(
       (_: any) => {
          this.food = this.service.foods.filter((data: any) => data?.id == _?.id);
-         this.price = this.food[0]?.price
+         this.price = this.food[0]?.price;
+          this.mount = this.price;
       }
     );
+    
   }
 
   ngOnInit() {
@@ -37,7 +39,7 @@ export class FoodDetailPage implements OnInit {
 
   decrease() {
     this.qte >= 2 ? this.qte-- : this.qte = 1;
-
+    this.mount - this.price >= this.price ? this.mount = this.mount - this.price: this.mount = this.price;
   }
  
 }
