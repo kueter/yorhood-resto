@@ -47,7 +47,7 @@ export class LoginPage implements OnInit {
     if(form.email === 'ed23@gmail.com' && form.password === '12345678') {
       this.router.navigateByUrl('home');
     }
-
+    this.LoginForm.reset();
     this.presentToast();
   }
 
