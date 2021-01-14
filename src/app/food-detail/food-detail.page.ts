@@ -47,7 +47,8 @@ export class FoodDetailPage implements OnInit {
       id: this.food[0]?.id,
       img: this.food[0]?.img,
       name: this.food[0]?.name,
-      price: this.mount
+      price: this.mount,
+      qte: this.qte
     };
 
     console.log(fd);
