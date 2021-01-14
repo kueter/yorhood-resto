@@ -14,13 +14,14 @@ export class FoodDetailPage implements OnInit {
   reduce = false;
   qte = 1;
   mount: any;
+  price: any;
 
   constructor(private route: ActivatedRoute, public service: DataService) {
     
     this.route.params.subscribe(
       (_: any) => {
          this.food = this.service.foods.filter((data: any) => data?.id == _?.id);
-         this.mount = this.food[0]?.price
+         this.price = this.food[0]?.price
       }
     );
   }
@@ -31,7 +32,7 @@ export class FoodDetailPage implements OnInit {
 
   increase() {
     this.qte ++;
-    this.mount = this.mount + this.mount;
+    this.mount = this.price * this.qte;
   }
 
   decrease() {
