@@ -36,7 +36,7 @@ const routes: Routes = [
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
   {
-    path: 'resto-menu',
+    path: 'resto-menu/:id',
     loadChildren: () => import('./resto-menu/resto-menu.module').then( m => m.RestoMenuPageModule)
   }
 ];
