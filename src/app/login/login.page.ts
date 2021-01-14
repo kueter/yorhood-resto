@@ -55,7 +55,8 @@ export class LoginPage implements OnInit {
   async presentToast() {
     const toast = await this.toastController.create({
       message: 'Error Login failed',
-      duration: 2000
+      duration: 2000,
+      color: 'danger'
     });
     toast.present();
   }
