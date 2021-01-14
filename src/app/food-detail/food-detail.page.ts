@@ -31,12 +31,12 @@ export class FoodDetailPage implements OnInit {
 
   increase() {
     this.qte ++;
-    this.mount = this.mount * this.qte;
+    this.mount = this.mount + this.mount;
   }
 
   decrease() {
     this.qte >= 2 ? this.qte-- : this.qte = 1;
-    
+
   }
  
 }
