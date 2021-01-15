@@ -67,3 +67,43 @@ ion-content {
         }
 }
 
+.fv {
+position: relative;
+
+    img {
+        width: 100%;
+        height: 84px;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+    }
+
+    button {
+            position: absolute;
+            top: 3%;
+            right: 3%;
+            background: #c04326;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+
+            ion-icon {
+                color: #FFFF;
+            }
+    }
+}
+
+.description {
+    display: grid;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
+    span:first-child {
+        font-weight: bold;
+        font-size: 15px;
+        color: #636566;
+    }
+    span:last-child {
+        font-size: 13px;
+        color: #979c9e;
+    }
+}
