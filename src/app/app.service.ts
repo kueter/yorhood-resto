@@ -11,8 +11,12 @@ export class AppService {
   private itemsInCartSubject: BehaviorSubject<any[]> = new BehaviorSubject([]);
   private itemsInCart: any[] = [];
 
+  private favoriteSubject: BehaviorSubject<any[]> = new BehaviorSubject([]);
+  private favorites : any[] = [];
+
   constructor() {
     this.itemsInCartSubject.subscribe(_ => this.itemsInCart = _);
+    this.favoriteSubject.subscribe(_ => this.favorites = _);
   }
 
   public addToCart(item: any) {
@@ -40,5 +44,19 @@ export class AppService {
 
   public clearCart() {
     this.itemsInCartSubject.next([]);
+  }
+
+
+  // 
+  public getFavorites() :Observable<any[]>{
+    return this.favoriteSubject.asObservable();
+  }
+
+  public addToFavorites(item: any) {
+    this.favoriteSubject.next([...this.favorites, item]);
+  }
+
+  public removeFromFavorites() {
+    
   }
 }
