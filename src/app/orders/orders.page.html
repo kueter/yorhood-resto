@@ -2,9 +2,18 @@
    
     <div class="orders-container">
             <ion-list class="ion-no-padding">
-                    <ion-card *ngFor="let item of [].constructor(5)">
+                    <ion-card (click)="expandItem(item)" *ngFor="let item of items">
+                        <ion-card-header class="title">
+                                <span></span>
+                                <span></span>
+                                <ion-icon name="chevron-up"></ion-icon>
+                        </ion-card-header>
                         <ion-card-content>
-                            Awesome content
+                            <app-expandable expandHeight="100px" [expanded]="item.expanded">
+                                    <p>{{'Hello'}}</p>
+                                    <p>{{'Hello'}}</p>
+                                    <p>{{'Hello'}}</p>
+                            </app-expandable>
                         </ion-card-content>
                     </ion-card>
             </ion-list>
