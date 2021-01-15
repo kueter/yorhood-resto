@@ -6,7 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-cart.page.scss'],
 })
 export class ShoppingCartPage implements OnInit {
-
+  
+  subtotal:any;
+  byTax:any;
   total_order: any;
   
   constructor() { }
