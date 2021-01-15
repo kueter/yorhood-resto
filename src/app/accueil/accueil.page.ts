@@ -32,7 +32,7 @@ export class AccueilPage implements OnInit {
     direction: 'horizontal',
     speed: 300,
     // effect: slide,
-    slidesPerView: 4,
+    slidesPerView: 2.5,
  };
 
  
