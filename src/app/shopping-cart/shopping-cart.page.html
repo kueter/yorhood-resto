@@ -20,14 +20,14 @@
 </div>
 
     <ion-list lines="none" class="ion-margin-top">
-      <ion-item-sliding>
+      <ion-item-sliding *ngFor="let item of (app?.getItems()|async)">
         <ion-item>
           <div class="v-li">
                 <img src="../../assets/img/f1.jpg" alt="">
                 <div class="description">
-                    <span>{{'Calas'}}</span>
+                    <span>{{item?.name}}</span>
                     <span>{{'somon,Mozzalera'}}</span>
-                    <span>{{'$34.00'}}</span>
+                    <span>{{'$'+ item?.price}}</span>
                 </div>
                 <div class="adjust">
                   <ion-buttons>
@@ -35,7 +35,7 @@
                       <ion-icon name="add-circle-outline"></ion-icon>
                     </ion-button>
                   </ion-buttons>
-                  <span class="ion-text-center">{{1.0}}</span>
+                  <span class="ion-text-center">{{item?.qte}}</span>
                   <ion-buttons>
                     <ion-button>
                       <ion-icon name="remove-circle-outline"></ion-icon>
