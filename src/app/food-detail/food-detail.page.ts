@@ -1,5 +1,5 @@
 import { Component, HostListener, OnInit} from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ToastController } from '@ionic/angular';
 import { AppService } from '../app.service';
 import { DataService } from '../data.service';
@@ -22,7 +22,7 @@ export class FoodDetailPage implements OnInit {
   foods: any[];
   added: boolean = false;
 
-  constructor(private route: ActivatedRoute, public service: DataService ,
+  constructor(private router: Router, private route: ActivatedRoute, public service: DataService ,
      public app: AppService ,public toastController: ToastController) {
     
     this.route.params.subscribe(
@@ -40,6 +40,10 @@ export class FoodDetailPage implements OnInit {
 
   ngOnInit() {
     
+  }
+
+  toCart() {
+    this.router.navigateByUrl('/shopping-cart');
   }
 
   increase() {

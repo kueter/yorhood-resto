@@ -12,7 +12,13 @@ export class ShoppingCartPage implements OnInit {
   byTax:any;
   total_order: any;
   
-  constructor(public app: AppService) { }
+  constructor(public app: AppService) {
+    this.app.getTotalAmount().subscribe(
+      (_) => {
+         this.total_order = _*1.1;
+      }
+    );
+   }
 
   ngOnInit() {
   }
