@@ -56,7 +56,9 @@ export class AppService {
     this.favoriteSubject.next([...this.favorites, item]);
   }
 
-  public removeFromFavorites() {
-    
+  public removeFromFavorites(item: any) {
+    const currentItems = [...this.favorites];
+    const itemsWithoutRemoved = currentItems.filter(_ => _.name !== item.name);
+    this.favoriteSubject.next(itemsWithoutRemoved);
   }
 }
