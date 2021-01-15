@@ -48,19 +48,25 @@ export class ShoppingCartPage implements OnInit {
   async presentAlertPrompt() {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Prompt!',
+      header: 'Payement Settings',
       inputs: [
         {
-          name: 'name1',
+          name: 'Number',
           type: 'text',
-          placeholder: 'Placeholder 1'
+          placeholder: 'Account number',
+          value: '4242345678890'
         },
         {
-          name: 'name2',
+          name: 'Exp date',
           type: 'text',
-          id: 'name2-id',
-          value: 'hello',
-          placeholder: 'Placeholder 2'
+          value: '10/22',
+          placeholder: 'Expire Date'
+        },
+        {
+          name: 'RIB',
+          type: 'text',
+          value: '431',
+          placeholder: 'RIB'
         },
       ],
       buttons: [
