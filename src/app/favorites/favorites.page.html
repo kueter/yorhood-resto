@@ -14,8 +14,8 @@
     </div>
 
     <div *ngIf="v == false" class="list-container">
-        <ion-list lines="none" *ngFor="let item of (app?.getFavorites()|async)">
-            <ion-item-sliding>
+        <ion-list lines="none">
+            <ion-item-sliding  *ngFor="let item of (app?.getFavorites()|async)">
                 <ion-item>
                     <div class="v_">
                         <img [src]="item?.img" alt="">
