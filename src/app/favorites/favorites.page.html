@@ -14,11 +14,11 @@
     </div>
 
     <div *ngIf="v == false" class="list-container">
-        <ion-list lines="none">
+        <ion-list lines="none" *ngFor="let item of app?.getFavorites()|async">
             <ion-item-sliding>
                 <ion-item>
                     <div class="v_">
-                        <img src="../../assets/img/f1.jpg" alt="">
+                        <img [src]="" alt="">
                         <div class="description">
                             <span>{{'Pizza Margherita'}}</span>
                             <span>{{'Home Cooking Experience'}}</span>
