@@ -7,6 +7,7 @@ import { EmptyComponent } from '../components/empty/empty.component';
   declarations: [ EmptyComponent ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [ EmptyComponent]
 })
 export class SharedModule { }
