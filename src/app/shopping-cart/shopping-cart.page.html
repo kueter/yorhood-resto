@@ -23,7 +23,7 @@
       <ion-item-sliding *ngFor="let item of (app?.getItems()|async)">
         <ion-item>
           <div class="v-li">
-                <img src="../../assets/img/f1.jpg" alt="">
+                <img [src]="item?.img" alt="">
                 <div class="description">
                     <span>{{item?.name}}</span>
                     <span>{{'somon,Mozzalera'}}</span>
@@ -72,7 +72,7 @@
                 <ion-button class="add_cart">
                   <div>
                     <span>{{'checkout'}}</span>
-                    <span>{{'$'+ total_order }}</span>
+                    <span>{{'$'+ total_order.toFixed(2) }}</span>
                   </div>
                 </ion-button>
           </div>
