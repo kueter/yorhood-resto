@@ -64,4 +64,7 @@
         </ion-grid>
 
     </div>
+
+    <app-empty *ngIf="(app?.getFavorites()|async).length === 0"></app-empty>
+
 </ion-content>
