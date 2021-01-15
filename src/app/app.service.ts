@@ -37,7 +37,7 @@ export class AppService {
   public getTotalAmount(): Observable<number> {
     return this.itemsInCartSubject.pipe(map((items: any[]) => {
       return items.reduce((prev, curr: any) => {
-        return prev + curr?.cost;
+        return prev + curr?.price;
       }, 0);
     })
   );
