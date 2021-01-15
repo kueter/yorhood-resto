@@ -62,11 +62,11 @@
     <div class="_container">
           <div class="_f1">
                 <span>{{'Subtotal'}}</span>
-                <span>{{'$'+ subtotal}}</span>
+                <span>{{'$'+ (app?.getTotalAmount()|async)}}</span>
           </div>
           <div class="_f2">
             <span>{{'TAX(10%)'}}</span>
-            <span>{{'$' + byTax }}</span>
+            <span>{{'$' + (app?.getTotalAmount()|async) * 0.1 }}</span>
       </div>
           <div class="_g">
                 <ion-button class="add_cart">
