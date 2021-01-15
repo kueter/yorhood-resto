@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { AppService } from '../app.service';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -11,7 +12,7 @@ export class ShoppingCartPage implements OnInit {
   byTax:any;
   total_order: any;
   
-  constructor() { }
+  constructor(public app: AppService) { }
 
   ngOnInit() {
   }
