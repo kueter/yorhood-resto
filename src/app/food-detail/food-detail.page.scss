@@ -284,22 +284,16 @@ ion-footer {
 
   }
 
-  .gn_list {
-    width: 100%;
-    ion-card-content {
-      --padding-inline-start: 5px!important;
-      --padding-inline-end: 5px!important;
-    }
+
 
     ._b {
       display: grid;
       width: 100%;
       span {
-        font-size: 8px;
+        font-size: 14px;
         font-weight: bold;
         color: #5c5858;
       }
-    }
   }
 
 
