@@ -54,6 +54,7 @@ export class AppService {
 
   public addToFavorites(item: any) {
     this.favoriteSubject.next([...this.favorites, item]);
+    
   }
 
   public removeFromFavorites(item: any) {
