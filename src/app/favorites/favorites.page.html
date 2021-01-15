@@ -4,11 +4,16 @@
         <div class="ih">
             <span>{{'Favorites Foods'}}</span>
         </div>
-        <ion-icon name="list"></ion-icon>
-        <ion-icon name="grid"></ion-icon>
+
+        <ion-buttons>
+            <ion-button (click)="switchView()">
+                <ion-icon name="list"></ion-icon>
+                <ion-icon name="grid"></ion-icon>
+            </ion-button>
+        </ion-buttons>
     </div>
 
-    <div class="list-container">
+    <div  *ngIf="v == false"  class="list-container">
         <ion-list lines="none">
             <ion-item>
                         <div class="v_">
@@ -25,10 +30,10 @@
         </ion-list>
     </div>
 
-    <div class="grid-container">
+    <div *ngIf="v == true"   class="grid-container">
         <ion-grid fixed class="ion-no-padding">
             <ion-row >
-                <ion-col size="6" >
+                <ion-col size="6">
                     <ion-card>
                         <ion-card-header class="ion-no-padding fv">
                             <img src="../../assets/img/f1.jpg" alt="">

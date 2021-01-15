@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FavoritesPage implements OnInit {
 
+  v = false;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+
+  switchView() {
+    this.v = !this.v;
   }
 
 }
