@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AppService } from '../app.service';
 import { DataService } from '../data.service';
 
 
@@ -16,7 +17,7 @@ export class FoodDetailPage implements OnInit {
   mount: any;
   price: any;
 
-  constructor(private route: ActivatedRoute, public service: DataService) {
+  constructor(private route: ActivatedRoute, public service: DataService , public app: AppService ) {
     
     this.route.params.subscribe(
       (_: any) => {
