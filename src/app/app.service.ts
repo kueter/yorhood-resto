@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 import { BehaviorSubject, Observable } from 'rxjs';
 
 import { map } from 'rxjs/operators' ;
@@ -14,7 +15,7 @@ export class AppService {
   private favoriteSubject: BehaviorSubject<any[]> = new BehaviorSubject([]);
   private favorites : any[] = [];
 
-  constructor() {
+  constructor(public toastController: ToastController) {
     this.itemsInCartSubject.subscribe(_ => this.itemsInCart = _);
     this.favoriteSubject.subscribe(_ => this.favorites = _);
   }
@@ -61,5 +62,14 @@ export class AppService {
     const currentItems = [...this.favorites];
     const itemsWithoutRemoved = currentItems.filter(_ => _.name !== item.name);
     this.favoriteSubject.next(itemsWithoutRemoved);
+  }
+
+  async presentToast(message: string) {
+    const toast = await this.toastController.create({
+      message: message,
+      duration: 2000,
+      color: 'dark'
+    });
+    toast.present();
   }
 }
