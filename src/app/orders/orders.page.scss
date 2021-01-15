@@ -12,9 +12,13 @@ ion-content {
     width: 100%;
   ion-card {
     box-shadow: none !important;
+    --background:#FAFAFA;
+    ion-list {
+      background: #FAFAFA;
 
-    ion-card-header {
-      --background:#FAFAFA;
+      ion-item {
+        margin-bottom: 10px;
+      }
     }
   }
     .title {

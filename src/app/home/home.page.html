@@ -14,7 +14,7 @@
       </ion-button>
     </ion-buttons>
   </ion-toolbar>
-  <ion-searchbar *ngIf="this.selectedTab != 'profile' " placeholder="Filter Pizza" class="nav_searchbar" inputmode="decimal" type="decimal" spellcheck="true"
+  <ion-searchbar *ngIf="this.selectedTab != 'profile' " placeholder="Search restaurants and foods" class="nav_searchbar" inputmode="decimal" type="decimal" spellcheck="true"
     animated="true" autocomplete="true" autocorrect="true" (ionChange)="onSearchChange($event)" [debounce]="250">
   </ion-searchbar>
 </ion-header>
