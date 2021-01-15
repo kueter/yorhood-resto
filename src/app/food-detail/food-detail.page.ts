@@ -34,7 +34,7 @@ export class FoodDetailPage implements OnInit {
     );
 
     this.app.getFavorites().subscribe((_) => this.favorites = _ );
-    this.app.getItems().subscribe((_) => this.foods);
+    this.app.getItems().subscribe((_) => this.foods = _);
     
   }
 
