@@ -1,5 +1,6 @@
 import { Component, HostListener, OnInit} from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ToastController } from '@ionic/angular';
 import { AppService } from '../app.service';
 import { DataService } from '../data.service';
 
@@ -17,7 +18,11 @@ export class FoodDetailPage implements OnInit {
   mount: any;
   price: any;
 
-  constructor(private route: ActivatedRoute, public service: DataService , public app: AppService ) {
+  favorites: any[];
+  foods: any[];
+
+  constructor(private route: ActivatedRoute, public service: DataService ,
+     public app: AppService ,public toastController: ToastController) {
     
     this.route.params.subscribe(
       (_: any) => {
@@ -26,6 +31,9 @@ export class FoodDetailPage implements OnInit {
           this.mount = this.price;
       }
     );
+
+    this.app.getFavorites().subscribe((_) => this.favorites = _ );
+    this.app.getItems().subscribe((_) => this.foods);
     
   }
 
@@ -51,8 +59,27 @@ export class FoodDetailPage implements OnInit {
       price: this.mount,
       qte: this.qte
     };
+  }
 
-    console.log(fd);
+  addToFavorite() {
+    const distinct = this.favorites.filter((e) => e?.name === this.food[0]?.name);
+
+    if (distinct.length === 0) {
+      this.app.addToFavorites(this.food[0]);
+      this.presentToast('Added to favorites');
+    }
+    if (distinct.length > 0) {
+      this.presentToast('Food already favorite');
+    }    
+  }
+
+  async presentToast(message: string) {
+    const toast = await this.toastController.create({
+      message: message,
+      duration: 2000,
+      color: 'dark'
+    });
+    toast.present();
   }
  
 }

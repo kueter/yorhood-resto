@@ -15,7 +15,7 @@ export class AppService {
   private favoriteSubject: BehaviorSubject<any[]> = new BehaviorSubject([]);
   private favorites : any[] = [];
 
-  constructor(public toastController: ToastController) {
+  constructor() {
     this.itemsInCartSubject.subscribe(_ => this.itemsInCart = _);
     this.favoriteSubject.subscribe(_ => this.favorites = _);
   }
@@ -55,7 +55,6 @@ export class AppService {
 
   public addToFavorites(item: any) {
     this.favoriteSubject.next([...this.favorites, item]);
-    this.presentToast('Add to favorites successful');
   }
 
   public removeFromFavorites(item: any) {
@@ -64,12 +63,5 @@ export class AppService {
     this.favoriteSubject.next(itemsWithoutRemoved);
   }
 
-  async presentToast(message: string) {
-    const toast = await this.toastController.create({
-      message: message,
-      duration: 2000,
-      color: 'dark'
-    });
-    toast.present();
-  }
+  
 }
