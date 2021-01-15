@@ -78,7 +78,8 @@ export class ShoppingCartPage implements OnInit {
             console.log('Confirm Cancel');
           }
         }, {
-          text: 'Ok',
+          text: 'Save',
+          role:'ok',
           handler: () => {
             console.log('Confirm Ok');
           }
