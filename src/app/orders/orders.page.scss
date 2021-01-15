@@ -10,11 +10,39 @@ ion-content {
 
 .orders-container {
     width: 100%;
-
+  ion-card {
+    box-shadow: none !important;
+  }
     .title {
+      padding-top: 15px;
+      width: 100%;
+      padding-left: 5px;
+      padding-right: 5px;
       display: flex;
       align-items: center;
       justify-content: space-between;
+
+      & > span{
+        font-size: 16px;
+        font-weight: bold;
+        color: var(--ion-color-primary);
+      }
+
+      div {
+        width: 35%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+          span {
+            font-size: 13px;
+            color: #77797a!important;
+          }
+
+          ion-icon {
+            color: var(--ion-color-primary);
+          }
+      }
     }
 }
 

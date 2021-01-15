@@ -1,21 +1,25 @@
 <ion-content class="pt-ion">
-   
-    <div class="orders-container">
-            <ion-list class="ion-no-padding">
-                    <ion-card (click)="expandItem(item)" *ngFor="let item of items">
-                        <ion-card-header class="title">
-                                <span></span>
-                                <span></span>
-                                <ion-icon name="chevron-up"></ion-icon>
-                        </ion-card-header>
-                        <ion-card-content>
-                            <app-expandable expandHeight="100px" [expanded]="item.expanded">
-                                    <p>{{'Hello'}}</p>
-                                    <p>{{'Hello'}}</p>
-                                    <p>{{'Hello'}}</p>
-                            </app-expandable>
-                        </ion-card-content>
-                    </ion-card>
-            </ion-list>
-    </div>
+
+        <div class="orders-container">
+                <ion-list class="ion-no-padding">
+                        <ion-card (click)="expandItem(item)" *ngFor="let item of items; let i = index">
+                                <ion-card-header class="ion-no-padding">
+                                        <div class="title">
+                                                <span>{{'Order #' + i+1}}</span>
+                                                <div>
+                                                        <span>{{'Order received'}}</span>
+                                                        <ion-icon name="chevron-up"></ion-icon>
+                                                </div>
+                                        </div>
+                                </ion-card-header>
+                                <ion-card-content>
+                                        <app-expandable expandHeight="100px" [expanded]="item.expanded">
+                                                <p>{{'Hello'}}</p>
+                                                <p>{{'Hello'}}</p>
+                                                <p>{{'Hello'}}</p>
+                                        </app-expandable>
+                                </ion-card-content>
+                        </ion-card>
+                </ion-list>
+        </div>
 </ion-content>
