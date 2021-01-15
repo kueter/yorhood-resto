@@ -35,6 +35,8 @@ ion-header {
   .shapes-outline {
     color: #c04326;
   }
+
+ 
   
   ion-card-header {
     position: relative;
@@ -145,6 +147,9 @@ ion-header {
   }
   
   .cata_trend_week {
+    ion-card {
+      width: 100%;
+    }
     .theader {
       width: 100%;
       margin-bottom: 10px;
