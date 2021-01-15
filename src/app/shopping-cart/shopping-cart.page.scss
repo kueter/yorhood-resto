@@ -106,9 +106,19 @@ ion-header,ion-toolbar {
   }
 }
 
+ion-list {
+  --background:#FAFAFA;
+}
+
 
 ion-content {
   --background:#FAFAFA;
+  --offset-bottom: auto !important;
+    --overflow: hidden;
+    overflow: auto;
+    &::-webkit-scrollbar {
+      display: none;
+    }
 }
 
 .v-li {
