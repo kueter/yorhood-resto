@@ -56,6 +56,8 @@
         
     </ion-list>
 
+    <app-empty *ngIf="(app?.getItems()|async).length === 0"></app-empty>
+
 </ion-content>
 
 <ion-footer class="ion-no-border">
