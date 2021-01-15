@@ -23,6 +23,9 @@ export class ShoppingCartPage implements OnInit {
   ngOnInit() {
   }
 
+  remove(item: any) {
+    this.app.removeFromCart(item);
+  }
 
   checkout() {
     
