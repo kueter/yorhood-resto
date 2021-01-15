@@ -77,18 +77,17 @@ export class FoodDetailPage implements OnInit {
   addToFavorite() {
     this.added = !this.added;
     const distinct = this.favorites.filter((e) => e?.name === this.food[0]?.name);
-      if(this.added === false) {
+      if(this.added === true) {
           if (distinct.length === 0) {
             this.app.addToFavorites(this.food[0]);
             this.presentToast('Added to favorites');
-            this.added = true;
           }
           if (distinct.length > 0) {
             this.presentToast('Food already favorites');
           }   
       }
 
-      if(this.added === true) {
+      if(this.added === false) {
         this.presentToast('Food remove from favorites');
       }
   }
