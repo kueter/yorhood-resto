@@ -3,7 +3,7 @@
         <div class="orders-container">
                 <ion-list class="ion-no-padding">
                         <ion-card (click)="expandItem(item)" *ngFor="let item of items; let i = index">
-                                <ion-card-header class="ion-no-padding">
+                                <ion-card-header>
                                         <div class="title">
                                                 <span>{{'Order #' + i+1}}</span>
                                                 <div>
@@ -13,11 +13,20 @@
                                         </div>
                                 </ion-card-header>
                                 <ion-card-content>
-                                        <app-expandable expandHeight="250px" [expanded]="item.expanded">
-                                                <ion-list>
+                                        <app-expandable expandHeight="300px" [expanded]="item.expanded">
+                                                <ion-list lines="none">
                                                         <ion-item *ngFor="let item of [].constructor(4)">
                                                                 <div class="item_v">
-                                                                        
+                                                                        <img src="../../assets/img/f1.jpg" alt="">
+                                                                        <div class="description">
+                                                                                <span>{{'Pizza Margheritta'}}</span>
+                                                                                <span>{{'Home Cooking Experience'}}</span>
+                                                                        </div>
+                                                                        <div class="pricing">
+                                                                                <span>{{'$16.5'}}</span>
+                                                                                <span>{{'2020-10-18'}}</span>
+                                                                                <span>{{'10:51'}}</span>
+                                                                        </div>
                                                                 </div>
                                                         </ion-item>
                                                 </ion-list>
