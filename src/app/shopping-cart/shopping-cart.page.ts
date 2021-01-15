@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ToastController } from '@ionic/angular';
+import { AlertController, ToastController } from '@ionic/angular';
 import { AppService } from '../app.service';
 
 @Component({
@@ -13,7 +13,8 @@ export class ShoppingCartPage implements OnInit {
   byTax:any;
   total_order: any;
   
-  constructor(public app: AppService, public toastController: ToastController) {
+  constructor(public app: AppService, public toastController: ToastController,
+    public alertController: AlertController) {
     this.app.getTotalAmount().subscribe(
       (_) => {
          this.total_order = _*1.1;
@@ -30,7 +31,7 @@ export class ShoppingCartPage implements OnInit {
   }
 
   checkout() {
-    
+    this.presentAlertPrompt();
   }
 
   async presentToast(message: string) {
@@ -42,4 +43,43 @@ export class ShoppingCartPage implements OnInit {
     toast.present();
   }
 
+
+
+  async presentAlertPrompt() {
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: 'Prompt!',
+      inputs: [
+        {
+          name: 'name1',
+          type: 'text',
+          placeholder: 'Placeholder 1'
+        },
+        {
+          name: 'name2',
+          type: 'text',
+          id: 'name2-id',
+          value: 'hello',
+          placeholder: 'Placeholder 2'
+        },
+      ],
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: () => {
+            console.log('Confirm Cancel');
+          }
+        }, {
+          text: 'Ok',
+          handler: () => {
+            console.log('Confirm Ok');
+          }
+        }
+      ]
+    });
+
+    await alert.present();
+  }
 }

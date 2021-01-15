@@ -71,7 +71,7 @@
             <span>{{'$' + (app?.getTotalAmount()|async) * 0.1 }}</span>
       </div>
           <div class="_g">
-                <ion-button class="add_cart">
+                <ion-button class="add_cart" (click)="checkout()">
                   <div>
                     <span>{{'checkout'}}</span>
                     <span>{{'$'+ total_order.toFixed(2) }}</span>
