@@ -30,6 +30,10 @@ export class RestoDetailPage implements OnInit {
   ngOnInit() {
   }
 
+  toCart() {
+    this.router.navigateByUrl('/shopping-cart');
+  }
+
 
   showMenu(id: any) {
     this.router.navigate(['/resto-menu', id]);
