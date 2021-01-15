@@ -383,7 +383,10 @@ ion-header {
         &__s {
           width: 100%;
           overflow: hidden;
-          white-space: nowrap;
+          word-break: break-word;
+          text-align: justify;
+          text-justify: inter-word;
+
           span {
             font-size: 15px;
             color: #77797a;
