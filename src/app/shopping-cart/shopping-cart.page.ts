@@ -17,4 +17,9 @@ export class ShoppingCartPage implements OnInit {
   ngOnInit() {
   }
 
+
+  checkout() {
+    
+  }
+
 }
