@@ -20,6 +20,7 @@ export class FoodDetailPage implements OnInit {
 
   favorites: any[];
   foods: any[];
+  added: boolean = false;
 
   constructor(private route: ActivatedRoute, public service: DataService ,
      public app: AppService ,public toastController: ToastController) {
@@ -52,6 +53,8 @@ export class FoodDetailPage implements OnInit {
   }
 
   addToCart() {
+    const distinct = this.foods.filter((e) => e?.name === this.food[0]?.name);
+
     const fd = {
       id: this.food[0]?.id,
       img: this.food[0]?.img,
@@ -59,6 +62,16 @@ export class FoodDetailPage implements OnInit {
       price: this.mount,
       qte: this.qte
     };
+
+
+    if (distinct.length === 0) {
+      this.app.addToCart(fd);
+      this.presentToast('Added to Cart');
+    }
+    if (distinct.length > 0) {
+      this.presentToast('Food already in the cart');
+    }  
+
   }
 
   addToFavorite() {
@@ -67,6 +80,7 @@ export class FoodDetailPage implements OnInit {
     if (distinct.length === 0) {
       this.app.addToFavorites(this.food[0]);
       this.presentToast('Added to favorites');
+      this.added = true;
     }
     if (distinct.length > 0) {
       this.presentToast('Food already favorite');
