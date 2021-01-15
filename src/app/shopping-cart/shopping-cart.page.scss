@@ -136,9 +136,13 @@ ion-content {
   .description {
       width: 40%;
       display: grid;
+      span:nth-child(1) {
+        color: #77797a;
+        font-size: 17px;
+      }
       span {
         color: #77797a;
-        font-size: 20px;
+        font-size: 14px;
       }
   }
 
