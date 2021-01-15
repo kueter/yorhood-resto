@@ -83,10 +83,16 @@ position: relative;
             right: 3%;
             background: #c04326;
             border-radius: 50%;
-            width: 50px;
-            height: 50px;
-
+            width: 40px;
+            height: 40px;
+            z-index: 3;
+            border: none!important;
+            outline: none;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             ion-icon {
+                font-size: 22px;
                 color: #FFFF;
             }
     }
