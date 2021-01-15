@@ -55,7 +55,7 @@ export class AppService {
 
   public addToFavorites(item: any) {
     this.favoriteSubject.next([...this.favorites, item]);
-    
+    this.presentToast('Add to favorites successful');
   }
 
   public removeFromFavorites(item: any) {
