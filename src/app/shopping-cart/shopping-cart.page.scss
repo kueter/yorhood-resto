@@ -3,8 +3,8 @@
     font-weight: bold;
 }
 
-ion-header {
-  --backfround:#FAFAFA;
+ion-header,ion-toolbar {
+  --background:#FAFAFA;
 }
 
 .theader {
@@ -15,6 +15,7 @@ ion-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FAFAFA;
 
     ion-icon {
         font-size: 40px;
