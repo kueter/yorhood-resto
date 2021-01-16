@@ -21,7 +21,7 @@ export class AppComponent {
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
-      this.router.navigateByUrl('food-detail/1');
+      this.router.navigateByUrl('resto-detail/1');
     });
   }
 }
