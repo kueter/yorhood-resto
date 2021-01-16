@@ -237,6 +237,12 @@ ion-footer {
     ion-list {
       --background: #FAFAFA;
       background: #FAFAFA;
+
+      ion-item {
+        margin-top: 7px;
+        background: #FAFAFA;
+        --background:#FAFAFA;
+      }
     }
   }
 
