@@ -232,6 +232,13 @@ ion-footer {
     }
   }
 
+  .extra_list {
+
+    ion-list {
+      --background: #FAFAFA;
+      background: #FAFAFA;
+    }
+  }
 
   .item .item-inner {
     padding-left: 0px;
