@@ -10,17 +10,16 @@ import { DataService } from '../data.service';
 export class AccueilPage implements OnInit {
 
   slidesOptions = {
-    // initialSlide: 0,
+    initialSlide: 0,
     direction: 'horizontal',
     speed: 300,
     // effect: slide,
-
     slidesPerView: 1.2,
    
   };
 
   slidesOpts = {
-     // initialSlide: 0,
+     initialSlide: 0,
      direction: 'horizontal',
      speed: 300,
      // effect: slide,
@@ -28,7 +27,7 @@ export class AccueilPage implements OnInit {
   };
   
   slidesOpt = {
-    // initialSlide: 0,
+    initialSlide: 0,
     direction: 'horizontal',
     speed: 300,
     // effect: slide,
