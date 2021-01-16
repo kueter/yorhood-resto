@@ -12,7 +12,7 @@ export class RestoDetailPage implements OnInit {
   resto: any;
 
   slidesOptions = {
-    // initialSlide: 0,
+    initialSlide: 0,
     direction: 'horizontal',
     speed: 300,
     // effect: slide,
