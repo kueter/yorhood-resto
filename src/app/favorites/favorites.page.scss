@@ -27,6 +27,14 @@
 
 ion-content {
     --background:#FAFAFA;
+   background:#FAFAFA;
+   --offset-bottom: auto !important;
+   --overflow: hidden;
+   overflow: scroll;
+   &::-webkit-scrollbar {
+     display: none;
+   }
+
 }
 
 .list-container {

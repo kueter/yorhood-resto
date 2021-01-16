@@ -14,7 +14,7 @@ ion-header {
     // --background: #fafafa;
     --offset-bottom: auto !important;
     --overflow: hidden;
-    overflow: auto;
+    overflow: scroll;
     &::-webkit-scrollbar {
       display: none;
     }
