@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="tbody">
-      <ion-slides [options]="slidesOpts">
+      <ion-slides [options]="slidesOpts" mode ="ios">
         <ion-slide *ngFor="let item of service?.foods">
           <ion-card>
             <ion-card-header class="ion-no-padding" (click)="detailfood(item?.id)">
